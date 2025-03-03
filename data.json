@@ -3,722 +3,722 @@
     "id": 1,
     "name": "Coke",
     "email": "715",
-    "image": "images1/coke.jpg"
+    "image": "Images1/coke.jpg"
   },
   {
     "id": 2,
     "name": "Fanta",
     "email": "650",
-    "image": "images1/fanta.jpg"
+    "image": "Images1/fanta.jpg"
   },
   {
     "id": 3,
     "name": "Pepsi",
     "email": "650",
-    "image": "images1/pepsi.jpg"
+    "image": "Images1/pepsi.jpg"
   },
   {
     "id": 4,
     "name": "Sprite",
     "email": "715",
-    "image": "images/sprite.jpg"
+    "image": "Images1/sprite.jpg"
   },
   {
     "id": 5,
     "name": "Bigi Cola",
     "email": "585",
-    "image": "images/bigi cola.jpg"
+    "image": "Images1/bigi cola.jpg"
   },
   {
     "id": 6,
     "name": "Cowbell Milk",
     "email": "260",
-    "image": "images/cowbell.jpg"
+    "image": "Images1/cowbell.jpg"
   },
   {
     "id": 7,
     "name": "Peak Milk",
     "email": "650",
-    "image": "images/peak.jpg"
+    "image": "Images1/peak.jpg"
   },
   {
     "id": 8,
     "name": "Loya Milk",
     "email": "780",
-    "image": "images/loya.jpg"
+    "image": "Images1/loya.jpg"
   },
   {
     "id": 9,
     "name": "Dano Milk",
     "email": "715",
-    "image": "images/dano.jpg"
+    "image": "Images1/dano.jpg"
   },
   {
     "id": 10,
     "name": "Golden Morn",
     "email": "5200",
-    "image": "images/goldenmorn.jpg"
+    "image": "Images1/goldenmorn.jpg"
   },
   {
     "id": 11,
     "name": "Indomie Super Pack",
     "email": "455",
-    "image": "images/super.jpg"
+    "image": "Images1/super.jpg"
   },
   {
     "id": 12,
     "name": "Indomie Hungry Man",
     "email": "650",
-    "image": "images/hungry.jpg"
+    "image": "Images1/hungry.jpg"
   },
   {
     "id": 13,
     "name": "Dangote Sugar 1kg",
     "email": "1560",
-    "image": "images/sugar.jpg"
+    "image": "Images1/sugar.jpg"
   },
   {
     "id": 14,
     "name": "Golden Penny Spaghetti",
     "email": "910",
-    "image": "images/goldenpenny.jpg"
+    "image": "Images1/goldenpenny.jpg"
   },
   {
     "id": 15,
     "name": "Flour 2kg",
     "email": "3250",
-    "image": "images/flour.jpg"
+    "image": "Images1/flour.jpg"
   },
   {
     "id": 16,
     "name": "Maggi Star Cube",
     "email": "130",
-    "image": "images/maggi.jpg"
+    "image": "Images1/maggi.jpg"
   },
   {
     "id": 17,
     "name": "Knorr Cube",
     "email": "260",
-    "image": "images/knor.jpg"
+    "image": "Images1/knor.jpg"
   },
   {
     "id": 18,
     "name": "Onga Cube",
     "email": "195",
-    "image": "images/onga.jpg"
+    "image": "Images1/onga.jpg"
   },
   {
     "id": 19,
     "name": "Titus Sardine",
     "email": "1105",
-    "image": "images/sardin.jpg"
+    "image": "Images1/sardin.jpg"
   },
   {
     "id": 20,
     "name": "Geisha ",
     "email": "975",
-    "image": "images/gesha.jpg"
+    "image": "Images1/gesha.jpg"
   },
   {
     "id": 21,
     "name": "Nutri C Orange",
     "email": "650",
-    "image": "images/nutric.jpg"
+    "image": "Images1/nutric.jpg"
   },
   {
     "id": 22,
     "name": "Dettol Antiseptic",
     "email": "2340",
-    "image": "images/dettol.jpg"
+    "image": "Images1/dettol.jpg"
   },
   {
     "id": 23,
     "name": "CloseUp Toothpaste",
     "email": "975",
-    "image": "images/closeup.jpg"
+    "image": "Images1/closeup.jpg"
   },
   {
     "id": 24,
     "name": "Harpic Cleaner",
     "email": "1300",
-    "image": "images/harpic.jpg"
+    "image": "Images1/harpic.jpg"
   },
   {
     "id": 25,
     "name": "Sunlight Detergent",
     "email": "520",
-    "image": "images/sunlight.jpg"
+    "image": "Images1/sunlight.jpg"
   },
   {
     "id": 26,
     "name": "Kellogg's Cornflakes",
     "email": "2600",
-    "image": "images/cornflex.jpg"
+    "image": "Images1/cornflex.jpg"
   },
   {
     "id": 27,
     "name": "Nasco Cornflakes",
     "email": "1950",
-    "image": "images/nasco2.jpg"
+    "image": "Images1/nasco2.jpg"
   },
   {
     "id": 28,
     "name": "Eva Water 75cl",
     "email": "195",
-    "image": "images/eva.jpg"
+    "image": "Images1/eva.jpg"
   },
   {
     "id": 29,
     "name": "Gala Roll",
     "email": "455",
-    "image": "images/gala.jpg"
+    "image": "Images1/gala.jpg"
   },
   {
     "id": 30,
     "name": "Freshyo Yogurt",
     "email": "585",
-    "image": "images/freshyo.jpg"
+    "image": "Images1/freshyo.jpg"
   },
   {
     "id": 31,
     "name": "Bama Mayonnaise",
     "email": "1950",
-    "image": "images/bama2.jpg"
+    "image": "Images1/bama2.jpg"
   },
   {
     "id": 32,
     "name": "Dettol Soap",
     "email": "650",
-    "image": "images/dettolsoap.jpg"
+    "image": "Images1/dettolsoap.jpg"
   },
   {
     "id": 33,
     "name": "Lux Soap",
     "email": "520",
-    "image": "images/luxsoap.jpg"
+    "image": "Images1/luxsoap.jpg"
   },
   {
     "id": 34,
     "name": "Vaseline Jelly",
     "email": "1040",
-    "image": "images/vaseline.jpg"
+    "image": "Images1/vaseline.jpg"
   },
   {
     "id": 35,
     "name": "Hotdog",
     "email": "3900",
-    "image": "images/hotdog.jpg"
+    "image": "Images1/hotdog.jpg"
   },
   {
     "id": 36,
     "name": "Always Sanitary Pad",
     "email": "1560",
-    "image": "images/always.jpg"
+    "image": "Images1/always.jpg"
   },
   {
     "id": 37,
     "name": "Tissue (Pack of 4)",
     "email": "1300",
-    "image": "images/toiletroll.jpg"
+    "image": "Images1/toiletroll.jpg"
   },
   {
     "id": 38,
     "name": "OMO Detergent",
     "email": "780",
-    "image": "images/omo.jpg"
+    "image": "Images1/omo.jpg"
   },
   {
     "id": 39,
     "name": "BIC Razor Pack",
     "email": "650",
-    "image": "images/bicrazor.jpg"
+    "image": "Images1/bicrazor.jpg"
   },
   {
     "id": 40,
     "name": "Hair Relaxer",
     "email": "2340",
-    "image": "images/relaxer.jpg"
+    "image": "Images1/relaxer.jpg"
   },
   {
     "id": 41,
     "name": "Nivea Body Lotion",
     "email": "5200",
-    "image": "images/nivea.jpg"
+    "image": "Images1/nivea.jpg"
   },
   {
     "id": 42,
     "name": "Oral-B Electric Toothbrush",
     "email": "650",
-    "image": "images/oralb1.jpg"
+    "image": "Images1/oralb1.jpg"
   },
   {
     "id": 43,
     "name": "Close-Up Mouthwash",
     "email": "1040",
-    "image": "images/closeupm.jpg"
+    "image": "Images1/closeupm.jpg"
   },
   {
     "id": 44,
     "name": "Hypo Bleach",
     "email": "455",
-    "image": "images/hypo.jpg"
+    "image": "Images1/hypo.jpg"
   },
   {
     "id": 45,
     "name": "Air Freshener",
     "email": "1300",
-    "image": "images/airfreshener.jpg"
+    "image": "Images1/airfreshener.jpg"
   },
   {
     "id": 46,
     "name": "Broom (Brush)",
     "email": "520",
-    "image": "images/broom.jpg"
+    "image": "Images1/broom.jpg"
   },
   {
     "id": 47,
     "name": "Mop Stick",
     "email": "1040",
-    "image": "images/mop.jpg"
+    "image": "Images1/mop.jpg"
   },
   {
     "id": 48,
     "name": "WAW Bar Soap",
     "email": "390",
-    "image": "images/waw.jpg"
+    "image": "Images1/waw.jpg"
   },
   {
     "id": 49,
     "name": "Jik Bleach",
     "email": "1300",
-    "image": "images/jik.jpg"
+    "image": "Images1/jik.jpg"
   },
   {
     "id": 50,
     "name": "Pack of Matches",
     "email": "195",
-    "image": "images/matches.jpg"
+    "image": "Images1/matches.jpg"
   },
   {
     "id": 51,
     "name": "Mosquito Coil",
     "email": "910",
-    "image": "images/coil.jpg"
+    "image": "Images1/coil.jpg"
   },
   {
     "id": 52,
     "name": "Insecticide Spray",
     "email": "2340",
-    "image": "images/insecticide.jpg"
+    "image": "Images1/insecticide.jpg"
   },
   {
     "id": 53,
     "name": "Rechargeable Torchlight",
     "email": "5200",
-    "image": "images/torch.jpg"
+    "image": "Images1/torch.jpg"
   },
   {
     "id": 54,
     "name": "Milo",
     "email": "455",
-    "image": "images/milo.jpg"
+    "image": "Images1/milo.jpg"
   },
   {
     "id": 55,
     "name": "Electric Extension Socket",
     "email": "3900",
-    "image": "images/extension.jpg"
+    "image": "Images1/extension.jpg"
   },
   {
     "id": 56,
     "name": "Parker Pen",
     "email": "650",
-    "image": "images/Parker pen.jpg"
+    "image": "Images1/Parker pen.jpg"
   },
   {
     "id": 57,
     "name": "Exercise Notebook",
     "email": "455",
-    "image": "images/book.jpg"
+    "image": "Images1/book.jpg"
   },
   {
     "id": 58,
     "name": "Cellophane Bags",
     "email": "260",
-    "image": "images/bagc.jpg"
+    "image": "Images1/bagc.jpg"
   },
   {
     "id": 59,
     "name": "Car Air Freshener",
     "email": "1950",
-    "image": "images/air.jpg"
+    "image": "Images1/air.jpg"
   },
   {
     "id": 60,
     "name": "Cotton Buds",
     "email": "390",
-    "image": "images/cutton.jpg"
+    "image": "Images1/cutton.jpg"
   },
 
   {
       "id": 61,
       "name": "Padlock",
       "email": "1300",
-      "image": "images/padlock.jpg"
+      "image": "Images1/padlock.jpg"
     },
     {
       "id": 62,
       "name": "Super Glue",
       "email": "650",
-      "image": "images/superglue.jpg"
+      "image": "Images1/superglue.jpg"
     },
     {
       "id": 63,
       "name": "Toothpick Pack",
       "email": "260",
-      "image": "images/toothpick.jpg"
+      "image": "Images1/toothpick.jpg"
     },
     {
       "id": 64,
       "name": "Heinz Ketchup (300g)",
       "email": "2500",
-      "image": "images/ketchup.jpg"
+      "image": "Images1/ketchup.jpg"
     },
     {
       "id": 65,
       "name": "Bottle of groundnut",
       "email": "1040",
-      "image": "images/groundnut2.jpg"
+      "image": "Images1/groundnut2.jpg"
     },
     {
       "id": 66,
       "name": "Dried thyme(10g)",
       "email": "650",
-      "image": "images/thyme.jpg"
+      "image": "Images1/thyme.jpg"
     },
     {
       "id": 67,
       "name": "Morning fresh washliquid",
       "email": "130",
-      "image": "images/fresh.jpg"
+      "image": "Images1/fresh.jpg"
     },
     {
       "id": 68,
       "name": "Nail Cutter",
       "email": "780",
-      "image": "images/nail.jpg"
+      "image": "Images1/nail.jpg"
     },
     {
       "id": 69,
       "name": "Handkerchief (Pack of 3)",
       "email": "975",
-      "image": "images/kerchief.jpg"
+      "image": "Images1/kerchief.jpg"
     },
     {
       "id": 70,
       "name": "Currry",
       "email": "520",
-      "image": "images/curry.jpg"
+      "image": "Images1/curry.jpg"
     },
     {
       "id": 71,
       "name": "Plastic Bucket",
       "email": "2340",
-      "image": "images/bucket.jpg"
+      "image": "Images1/bucket.jpg"
     },
     {
       "id": 72,
       "name": "shweppes",
       "email": "455",
-      "image": "images/shweppes.jpg"
+      "image": "Images1/shweppes.jpg"
     },
     {
       "id": 73,
       "name": "Shoe Polish (Kiwi)",
       "email": "910",
-      "image": "images/polish.jpg"
+      "image": "Images1/polish.jpg"
     },
     {
       "id": 74,
       "name": "Lighter",
       "email": "780",
-      "image": "images/lighter.jpg"
+      "image": "Images1/lighter.jpg"
     },
     {
       "id": 75,
       "name": "Cloth Pegs (Pack of 12)",
       "email": "1040",
-      "image": "images/pegs.jpg"
+      "image": "Images1/pegs.jpg"
     },
     {
       "id": 76,
       "name": "Bed sheet",
       "email": "1300",
-      "image": "images/bedsheet.jpg"
+      "image": "Images1/bedsheet.jpg"
     },
     {
       "id": 77,
       "name": "Face Mask (Pack of 10)",
       "email": "1560",
-      "image": "images/facemask.jpg"
+      "image": "Images1/facemask.jpg"
     },
     {
       "id": 78,
       "name": "Nike cap",
       "email": "780",
-      "image": "images/cap.jpg"
+      "image": "Images1/cap.jpg"
     },
     {
       "id": 79,
       "name": "Comb & Brush Set",
       "email": "1040",
-      "image": "images/comb.jpg"
+      "image": "Images1/comb.jpg"
     },
     {
       "id": 80,
       "name": "Safety Pins",
       "email": "455",
-      "image": "images/pin.jpg"
+      "image": "Images1/pin.jpg"
     },
     {
       "id": 81,
       "name": "Nail File",
       "email": "520",
-      "image": "images/nailfile.jpg"
+      "image": "Images1/nailfile.jpg"
     },
     {
       "id": 82,
       "name": "Scissors",
       "email": "1300",
-      "image": "images/scissors.jpg"
+      "image": "Images1/scissors.jpg"
     },
     {
       "id": 83,
       "name": "Key Holder",
       "email": "910",
-      "image": "images/keyholder.jpg"
+      "image": "Images1/keyholder.jpg"
     },
     {
       "id": 84,
       "name": "Table Spoon Set (Pack of 6)",
       "email": "2600",
-      "image": "images/spoon.jpg"
+      "image": "Images1/spoon.jpg"
     },
     {
       "id": 85,
       "name": "Toilet Brush",
       "email": "1300",
-      "image": "images/toiletbrush.jpg"
+      "image": "Images1/toiletbrush.jpg"
     },
     {
       "id": 86,
       "name": "Plastic Plates (Pack of 4)",
       "email": "3250",
-      "image": "images/plastic plates.jpg"
+      "image": "Images1/plastic plates.jpg"
     },
     {
       "id": 87,
       "name": "Hand Sanitizer",
       "email": "455",
-      "image": "images/sanitizer.jpg"
+      "image": "Images1/sanitizer.jpg"
     },
     {
       "id": 88,
       "name": "Gino Tomato paste",
       "email": "variable",
-      "image": "images/gino.jpg"
+      "image": "Images1/gino.jpg"
     },
     {
       "id": 89,
       "name": "Rechargeable Fan",
       "email": "15600",
-      "image": "images/fan.jpg"
+      "image": "Images1/fan.jpg"
     },
     {
       "id": 90,
       "name": "Pocket Mirror",
       "email": "520",
-      "image": "images/mirror.jpg"
+      "image": "Images1/mirror.jpg"
     },
       {
         "id": 91,
         "name": "Hollandia Evaporated Milk (160g)",
         "email": "520",
-        "image": "images/hollandia.jpg"
+        "image": "Images1/hollandia.jpg"
       },
       {
         "id": 92,
         "name": "Chi Exotic Juice (1L)",
         "email": "1300",
-        "image": "images/chiexotic.jpg"
+        "image": "Images1/chiexotic.jpg"
       },
       {
         "id": 93,
         "name": "Ribena Blackcurrant Drink (500ml)",
         "email": "1950",
-        "image": "images/ribena.jpg"
+        "image": "Images1/ribena.jpg"
       },
       {
         "id": 94,
         "name": "Minimie Chin Chin (50g)",
         "email": "260",
-        "image": "images/minimie.jpg"
+        "image": "Images1/minimie.jpg"
       },
       {
         "id": 95,
         "name": "Gala Sausage Roll",
         "email": "455",
-        "image": "images/gala.jpg"
+        "image": "Images1/gala.jpg"
       },
       {
         "id": 96,
         "name": "Supreme Ice Cream (500ml)",
         "email": "2600",
-        "image": "images/supreme.jpg"
+        "image": "Images1/supreme.jpg"
       },
       {
         "id": 97,
         "name": "Auntie B Spaghetti (500g)",
         "email": "1040",
-        "image": "images/auntieb.jpg"
+        "image": "Images1/auntieb.jpg"
       },
       {
         "id": 98,
         "name": "Crown Bread (Sliced, 500g)",
         "email": "910",
-        "image": "images/crownbread.jpg"
+        "image": "Images1/crownbread.jpg"
       },
       {
         "id": 99,
         "name": "Kings Vegetable Oil (3L)",
         "email": "6500",
-        "image": "images/kings.jpg"
+        "image": "Images1/kings.jpg"
       },
       {
         "id": 100,
         "name": "Ducros Curry Powder (50g)",
         "email": "520",
-        "image": "images/ducros.jpg"
+        "image": "Images1/ducros.jpg"
       },
       {
         "id": 101,
         "name": "Golden Penny Semovita (2kg)",
         "email": "2600",
-        "image": "images/semovita.jpg"
+        "image": "Images1/semovita.jpg"
       },
       {
         "id": 102,
         "name": "Dangote Spaghetti (500g)",
         "email": "910",
-        "image": "images/dangotespaghetti.jpg"
+        "image": "Images1/dangotespaghetti.jpg"
       },
       {
         "id": 103,
         "name": "Nestle Milo (500g Tin)",
         "email": "4550",
-        "image": "images/nestlemilo.jpg"
+        "image": "Images1/nestlemilo.jpg"
       },
       {
         "id": 104,
         "name": "Horlicks (400g)",
         "email": "5200",
-        "image": "images/horlicks.jpg"
+        "image": "Images1/horlicks.jpg"
       },
       {
         "id": 105,
         "name": "Bournvita (500g Tin)",
         "email": "4550",
-        "image": "images/bournvita.jpg"
+        "image": "Images1/bournvita.jpg"
       },
       {
         "id": 106,
         "name": "McVities Digestive Biscuits (250g)",
         "email": "1560",
-        "image": "images/mcvities.jpg"
+        "image": "Images1/mcvities.jpg"
       },
       {
         "id": 107,
         "name": "Noreos Chocolate Biscuit (5 packs)",
         "email": "1300",
-        "image": "images/noreos.jpg"
+        "image": "Images1/noreos.jpg"
       },
       {
         "id": 108,
         "name": "Yaahoo Instant Noodles (120g)",
         "email": "455",
-        "image": "images/yaahoo.jpg"
+        "image": "Images1/yaahoo.jpg"
       },
       {
         "id": 109,
         "name": "Power Oil (750ml)",
         "email": "1950",
-        "image": "images/poweroil.jpg"
+        "image": "Images1/poweroil.jpg"
       },
       {
         "id": 110,
         "name": "Three Crowns Milk (400g Tin)",
         "email": "2600",
-        "image": "images/threecrowns.jpg"
+        "image": "Images1/threecrowns.jpg"
       },
       {
         "id": 111,
         "name": "Happy Hour Orange Drink (500ml)",
         "email": "650",
-        "image": "images/happyhour.jpg"
+        "image": "Images1/happyhour.jpg"
       },
       {
         "id": 112,
         "name": "Pepsi Bottle (50cl)",
         "email": "455",
-        "image": "images/pepsibottle.jpg"
+        "image": "Images1/pepsibottle.jpg"
       },
       {
         "id": 113,
         "name": "Nasco Cornflakes (500g)",
         "email": "2600",
-        "image": "images/nascocornflakes.jpg"
+        "image": "Images1/nascocornflakes.jpg"
       },
       {
         "id": 114,
         "name": "Golden Penny Macaroni (500g)",
         "email": "910",
-        "image": "images/goldenmacaroni.jpg"
+        "image": "Images1/goldenmacaroni.jpg"
       },
       {
         "id": 115,
         "name": "Blue Band Margarine (450g)",
         "email": "2600",
-        "image": "images/blueband.jpg"
+        "image": "Images1/blueband.jpg"
       },
       {
         "id": 116,
         "name": "Dano Full Cream Milk (400g Tin)",
         "email": "3250",
-        "image": "images/danocream.jpg"
+        "image": "Images1/danocream.jpg"
       },
       {
         "id": 117,
         "name": "Honeywell Wheat Meal (2kg)",
         "email": "3900",
-        "image": "images/honeywell.jpg"
+        "image": "Images1/honeywell.jpg"
       },
       {
         "id": 118,
         "name": "Golden Penny Flour (2kg)",
         "email": "3250",
-        "image": "images/goldenpennyflour.jpg"
+        "image": "Images1/goldenpennyflour.jpg"
       },
       {
         "id": 119,
         "name": "Cway Table Water (75cl)",
         "email": "195",
-        "image": "images/cway.jpg"
+        "image": "Images1/cway.jpg"
       },
       {
         "id": 120,
         "name": "Dansa Pineapple Juice (1L)",
         "email": "1300",
-        "image": "images/dansa.jpg"
+        "image": "Images1/dansa.jpg"
       }
     ]
     
