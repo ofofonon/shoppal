@@ -3,19 +3,19 @@
     "id": 1,
     "name": "Coke",
     "email": "715",
-    "image": "images/coke.jpg"
+    "image": "images1/coke.jpg"
   },
   {
     "id": 2,
     "name": "Fanta",
     "email": "650",
-    "image": "images/fanta.jpg"
+    "image": "images1/fanta.jpg"
   },
   {
     "id": 3,
     "name": "Pepsi",
     "email": "650",
-    "image": "images/pepsi.jpg"
+    "image": "images1/pepsi.jpg"
   },
   {
     "id": 4,
