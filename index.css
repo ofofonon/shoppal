@@ -642,6 +642,17 @@ input:focus{
     color: white;  margin-top: 0%; margin-left: 1%; font-family: 'Poppins', sans-serif;
 }
 
+.fa-cart-shopping{
+    color: rgb(250, 246, 246); margin-top: 35%;
+}
+
+.bbb{
+    font-weight: bolder; color: white;text-shadow: 2px 2px 7px #18426691;
+}
+
+#cartno{
+    padding-left: 80%; font-weight: bold; margin-top: -40px; 
+}
 
 
 
@@ -656,17 +667,18 @@ input:focus{
 @media (max-width: 375px) {
 
     .user-cards{
-        margin-top: 50px; height: 500px; overflow: hidden; overflow-y: scroll; width: 100%; padding: 0%;  
+        margin-top: 17px; height: 600px; overflow: hidden; overflow-y: scroll; width: 100%; padding: 0%;  
     }
 
 
     .cards{
-        width: 25%;
+        width: 40%;
         
-        height: 140px;
+        height: 180px;
         background-color: white;
         margin: 6px;
-        border-radius: 12px;
+        margin-left: 10px;
+        border-radius: 8px;
         box-shadow: 1px 1px 5px #1842663f;
         display: flex;
         display: inline-block;
@@ -685,35 +697,38 @@ input:focus{
     
     .header{
         
-        width: 68%;
+        width: 130%;
         
         background-color: transparent;
+       
         
-     
-        font-size: 70%;
+        font-size: 76%;
         line-height: 20px;
         color: #184266;
-        margin-left: -67%;
+        padding-left: 3px;
        line-height: 13px;
       margin-top: 10px;
+      margin-left: -50%;
     
     }
     
     .body{
         
      font-weight: bolder;
-        font-size: 70%;
+     width: 150%;
+        font-size: 80%;
         color: #184266;
-       margin-left: -60%;
+       margin-left: -24%;
         line-break: strict;
         line-height: 1px;
         margin-top: -20px;
     }
     
     .user-image{
-        width: 170%;
+        width: 100%;
         border-radius: 10px;
-        margin-left: -68%;
+        margin-left: -19%;
+        margin-top: -6px;
     }
 
     .search2{
@@ -741,7 +756,7 @@ input:focus{
     }
 
     .hyt{
-        margin-top: -80px;
+        margin-top: 0px;
     }
 
 
@@ -904,5 +919,36 @@ input:focus{
         float: left;
     }
 
+    .cart{
+        width: 100px;
+        height: 40px;
+        border-radius: 50px;
+        background-color: rgb(245, 103, 51);
+        color: rgb(236, 192, 176);
+        position: fixed;
+        top: 2%;
+        left: 67%;
+        box-shadow: 1px 1px 4px #184266;
+        display: none;
+        cursor: pointer;
+        text-align: center;
+        
+    }
 
+    .fa-cart-shopping{
+        color: rgb(250, 246, 246); margin-top: 12%; 
+        display: inline-block;
+    }
+
+    .bbb{
+        font-weight: bolder; color: white;text-shadow: 2px 2px 7px #18426691; 
+        margin-top: 8%; display: inline-block;
+    }
+    #cartno{
+        padding-left: 0%; font-weight: bold; margin-top: 0px; display: inline-block;
+    }
+
+    #sear{
+        margin-top: -50px;
+    }
 }

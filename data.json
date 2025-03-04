@@ -1,25 +1,25 @@
 [
   {
     "id": 1,
-    "name": "Coke",
+    "name": "Coke soda",
     "email": "715",
     "image": "Images1/coke.jpg"
   },
   {
     "id": 2,
-    "name": "Fanta",
+    "name": "Fanta soda",
     "email": "650",
     "image": "Images1/fanta.jpg"
   },
   {
     "id": 3,
-    "name": "Pepsi",
+    "name": "Pepsi soda",
     "email": "650",
     "image": "Images1/pepsi.jpg"
   },
   {
     "id": 4,
-    "name": "Sprite",
+    "name": "Sprite soda",
     "email": "715",
     "image": "Images1/sprite.jpg"
   },
