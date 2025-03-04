@@ -622,7 +622,25 @@ input:focus{
     transition: 0.3s;
 }
 
+.hyt{
+    margin-top: 40px;
+}
 
+.cartsum{
+    width: 20%;  background-color: rgb(245, 103, 51);position: fixed; z-index: 15;  top: 82%; border-radius: 10px; margin: 0; top: 6%; border-bottom-right-radius: 10px;left: 73%; z-index: 5; height: 300px; text-align: center;
+}
+
+#cartTotal{
+    color: white;  margin-top: 30px; margin-left: 2%; font-family: 'Poppins', sans-serif;
+}
+
+#noi{
+    color: white;  margin-top: 0%; margin-left: 1%; font-family: 'Poppins', sans-serif;
+}
+
+#trans{
+    color: white;  margin-top: 0%; margin-left: 1%; font-family: 'Poppins', sans-serif;
+}
 
 
 
@@ -697,4 +715,194 @@ input:focus{
         border-radius: 10px;
         margin-left: -68%;
     }
+
+    .search2{
+        margin-top: 0px;
+        width: 68%;
+        border: 2px solid #184266c5;
+        border-radius: 60px;
+        padding: 12px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bold;
+        color: #1842669a;
+        margin-left: 14%;
+        outline: none;
+    }
+    .sub2{
+        height: 48px;
+        width: 48px;
+        background-color: rgb(245, 103, 51);
+        
+       position: absolute;
+       margin-left: -49px;
+       border: none;
+       margin-top: 0px;
+       border-radius: 50%;
+    }
+
+    .hyt{
+        margin-top: -80px;
+    }
+
+
+    .cart{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: rgb(245, 103, 51);
+        color: rgb(236, 192, 176);
+        position: fixed;
+        top: 2%;
+        left: 94%;
+        box-shadow: 1px 1px 4px #184266;
+        display: none;
+        cursor: pointer;
+        text-align: center;
+    }
+    
+    .orderlistback{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.363);
+        top: 0;
+        display: none;
+    }
+    
+    .orderlist{
+        width: 96%;
+        height: fit-content;
+        background-color: rgb(250, 246, 246);
+       left: 2%;
+        border-radius: 12px;
+        padding-bottom: 3px;
+        position: absolute;
+        top: 45.7%;
+        overflow-y: scroll;
+        padding-bottom: 700px;
+    }
+    
+    .close{
+        background-color:  rgb(250, 246, 246);
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        position: absolute;
+        left: 69%;
+        top: 5%;
+        cursor: pointer;
+        z-index: 15;
+        box-shadow: 1px 1px 4px #1842667a;
+    }
+    
+    .mad{
+        background-color: rgb(238, 235, 235);
+        margin-top: 0px;
+        width: 135%;
+        height: 150px;
+        margin-left: -19%;
+        border-radius: 18px;
+        box-shadow: 1px 1px 4px #1842667a;
+        text-align: center;
+        padding: 1px;
+        color: #184266;
+        display: block;
+        margin-top: -20px;
+        
+        
+    }
+    
+    .mad1{
+        font-weight: bold;
+        float: left;
+        margin-left: 20px;
+        margin-top: 10px;
+       
+    }
+
+    .cartsum{
+        width: 96%;  background-color: rgb(245, 103, 51);position: absolute; z-index: 15;  top: 82%; border-radius: 10px; margin: 0; top: 2%; border-bottom-right-radius: 10px;left: 2%; z-index: 5; height: 270px; text-align: center;
+    }
+
+    #cartTotal{
+        color: white;  margin-top: 10px; margin-left: 2%; font-family: 'Poppins', sans-serif;
+    }
+    
+    #noi{
+        color: white;  margin-top: 0%; margin-left: 1%; font-family: 'Poppins', sans-serif;
+    }
+    
+    #trans{
+        color: white;  margin-top: 0%; margin-left: 1%; font-family: 'Poppins', sans-serif;
+    }
+
+    .toptotal{
+        color: white;
+        font-weight: bolder;
+        margin-left: 3%;
+        margin-top: 10%;
+    }
+
+    .itemimage1{
+        width: 120px;
+        height: 110px;
+        border-radius: 10px;
+        border-radius: 10px;
+        margin-left: 2%;
+        margin-top: 2%;
+        float: left;
+    }
+    .itembox{
+        margin-left: 1.5%;
+        margin-bottom: 100px;
+    }
+    .num{
+        display: flex;
+        margin-left: 0%;
+        margin-top: -10px;
+        float: left;
+    }
+
+    .pr{
+       margin-left: 0%;
+    }
+    .numfig{
+        width: 20%;
+        color: #184266;
+        border: none;
+        background-color: rgb(216, 211, 211);
+        font-weight: bold;
+        padding-left: 8%;
+        margin-top: 10px;
+    }
+    
+    
+    .numfig::-webkit-inner-spin-button,.numfig::-webkit-outer-spin-button{
+        -webkit-appearance: none;
+        margin: 0;
+    }
+    
+    .gt,.gtm{
+        width: 30px;
+        height: 30px;
+        border-radius: 8px;
+        padding: 0px;
+        background-color: rgb(245, 103, 51);
+        color: white;
+        border: none;
+        margin-top: 10px;
+    }
+
+    .gtm{
+        margin-left: 10px;
+        
+    }
+
+    .bl{
+        margin-top: 0px;
+        margin-left: 0px;
+        float: left;
+    }
+
+
 }
