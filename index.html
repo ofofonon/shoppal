@@ -190,7 +190,7 @@
 
    
     <div class="orderlist" id="orderlist" style="padding-bottom: 100px;" >
-        <h1 class="carthead"><i class="fa-solid fa-cart-shopping" style="color: rgb(245, 103, 51); margin-top: 2%; font-size: 70%;"></i>Shopping Cart1</h1>
+        <h1 class="carthead"><i class="fa-solid fa-cart-shopping" style="color: rgb(245, 103, 51); margin-top: 2%; font-size: 70%;"></i>Shopping Cart</h1>
         <div id="noitem" style="display: none; text-align: center; transform: scale(0.8,0.8);"><i class="noitemsign fa-solid fa-cart-plus" ></i><br><h1 style="color: #1842661e; font-weight: bold;">No Item Selected</h1></div>
         <div class="itembox" id="itembox">
         </div>
@@ -230,16 +230,24 @@
             </select>
             <p class="inptext" style="margin-top: 10px;">Address</p>
             <input type="text" class="inp" id="ad" required><br>
-            <input  type="button" value="Pay" class="pay" onmousedown="makePayment(); sendCartDetails();" >
+            <input  type="button" value="Proceed to payment" class="pay" onmousedown="makePayment(); sendCartDetails();" >
             
         </form>
-        <p class="tty">Total <br> ₦</p>
-        <p id="last"></p>
+        <p class="tty">Total <br> ₦ <span id="last"></span></p>
+        
     </div>
 </div>
 
 
 <div class="dis" id="dis">Item added to cart</div>
+
+<div class="enjoy">
+   <div class="row">
+    <div class="col-lg-6">
+        <h1 style=" color: white; margin-left: 20%; margin-top: 5%;font-size: 290%;">Enjoy A <br>Seamless <br>Shopping <br>Experience</h1>
+    </div>
+   </div>
+</div>
 <div style="width: 100%; height: 400px;"></div>
 
 
