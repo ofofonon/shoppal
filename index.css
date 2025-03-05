@@ -778,7 +778,7 @@ input:focus{
     .orderlistback{
         position: fixed;
         width: 100%;
-        height: 100%;
+        height: 1000px;
         background-color: rgba(0, 0, 0, 0.363);
         top: 0;
         display: none;
@@ -792,7 +792,7 @@ input:focus{
         border-radius: 12px;
         padding-bottom: 3px;
         position: absolute;
-        top: 40%;
+        top: 28%;
         overflow-y: scroll;
         padding-bottom: 700px;
     }
