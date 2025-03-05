@@ -619,7 +619,7 @@ input:focus{
     font-size: 150%;
     font-weight: bolder;
     padding-top: 25px;
-    transition: 0.3s;
+    transition: 0.22s;
 }
 
 .hyt{
@@ -785,14 +785,14 @@ input:focus{
     }
     
     .orderlist{
-        width: 96%;
-        height: fit-content;
+        width: 94%;
+        height: 350px;
         background-color: rgb(250, 246, 246);
-       left: 2%;
+       left: 3%;
         border-radius: 12px;
         padding-bottom: 3px;
         position: absolute;
-        top: 45.7%;
+        top: 40%;
         overflow-y: scroll;
         padding-bottom: 700px;
     }
@@ -814,7 +814,7 @@ input:focus{
         background-color: rgb(238, 235, 235);
         margin-top: 0px;
         width: 135%;
-        height: 150px;
+        height: 133px;
         margin-left: -19%;
         border-radius: 18px;
         box-shadow: 1px 1px 4px #1842667a;
@@ -830,17 +830,19 @@ input:focus{
     .mad1{
         font-weight: bold;
         float: left;
-        margin-left: 20px;
+        margin-left: 3%;
         margin-top: 10px;
+        font-weight: 100;
+        font-size: 130%;
        
     }
 
     .cartsum{
-        width: 96%;  background-color: rgb(245, 103, 51);position: absolute; z-index: 15;  top: 82%; border-radius: 10px; margin: 0; top: 2%; border-bottom-right-radius: 10px;left: 2%; z-index: 5; height: 270px; text-align: center;
+        width: 94%;  background-color: rgb(245, 103, 51);position: absolute; z-index: 15;  top: 82%; border-radius: 10px; margin: 0; top: 2%; border-bottom-right-radius: 10px;left: 3%; z-index: 5; height: 270px; 
     }
 
     #cartTotal{
-        color: white;  margin-top: 10px; margin-left: 2%; font-family: 'Poppins', sans-serif;
+        color: white;  margin-top: 10px; margin-left: 0%; font-family: 'Poppins', sans-serif;
     }
     
     #noi{
@@ -873,13 +875,15 @@ input:focus{
     }
     .num{
         display: flex;
-        margin-left: 0%;
+        margin-left: -50%;
         margin-top: -10px;
-        float: left;
+       
     }
 
     .pr{
        margin-left: 0%;
+       font-size: 130%;
+       font-weight: bolder;
     }
     .numfig{
         width: 20%;
@@ -914,9 +918,10 @@ input:focus{
     }
 
     .bl{
-        margin-top: 0px;
-        margin-left: 0px;
-        float: left;
+        margin-top: -100px;
+        margin-left: 25px;
+      position: absolute;
+      bottom: 24%;
     }
 
     .cart{
@@ -926,7 +931,7 @@ input:focus{
         background-color: rgb(245, 103, 51);
         color: rgb(236, 192, 176);
         position: fixed;
-        top: 2%;
+        top: 14%;
         left: 67%;
         box-shadow: 1px 1px 4px #184266;
         display: none;
@@ -950,5 +955,32 @@ input:focus{
 
     #sear{
         margin-top: -50px;
+    }
+
+
+    .dis{
+        width: 80%;
+        height: 80px;
+        background-color: rgba(245, 103, 51, 0.959);
+        position: fixed;
+        bottom: -19%;
+        margin-left: 10%;
+        border-radius: 12px;
+        color: white;
+        text-align: center;
+        font-size: 110%;
+        font-weight: bolder;
+        padding-top: 25px;
+        transition: 0.3s;
+        transform: scale(0.9,0.9);
+    }
+
+    .carthead{
+        color: rgb(245, 103, 51);
+        font-size: 200%;
+        font-weight: bolder;
+        margin-left: -20%;
+        font-family: 'Roboto';
+        
     }
 }

@@ -407,7 +407,7 @@ function handleCardClick(user) {
         cart.style.display='block'
             
             console.log(`User 1 clicked: ${user.name}`);
-           document.getElementById('dis').style.bottom='0%'
+           document.getElementById('dis').style.bottom='5%'
             setTimeout( function(){
                 document.getElementById('dis').style.bottom='-19%';
             }, 800)
