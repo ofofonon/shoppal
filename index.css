@@ -1025,4 +1025,27 @@ input:focus{
         font-family: 'Roboto';
         
     }
+
+    .payinfofront{
+        background-color: white;
+        height: 90%;
+        width: 92%;
+        position: absolute;
+        left: 2%;
+        border-radius: 25px;
+        box-shadow: 1px 1px 4px #1842667a;
+        margin-top: 5%;
+    }
+
+    .payclose{
+        position: absolute;
+        height: 50px;
+        width: 50px;
+        border-radius: 50px;
+        background-color: white;
+        top: 2%;
+        left: 82%;
+        box-shadow: 2px 2px 7px #1842667a;
+        z-index: 18;
+    }
 }
