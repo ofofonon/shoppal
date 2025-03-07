@@ -3,6 +3,7 @@ const userCardTemplate = document.querySelector("[data-user-template]");
 const userCardContainer = document.querySelector("[data-user-cards-container]");
 const searchInput = document.querySelector("[data-search]");
 const searchInput2 = document.querySelector("[data-search1]");
+const searchInput3 = document.querySelector("[data-search2]");
 const cartno = document.getElementById('cartno');
 const cart = document.getElementById('cart');
 const detailsContainer = document.getElementById('itembox');
@@ -348,6 +349,10 @@ function closeorder() {
 searchInput2.addEventListener("input", function () {
     searchInput.value = this.value;
 });
+
+searchInput3.addEventListener("input", function () {
+    searchInput.value = this.value;
+});
 document.getElementById('nor').innerHTML=`No Items found for `;
 searchInput.addEventListener('input', function () {
     document.getElementById('nor2').innerText = this.value;
@@ -355,6 +360,10 @@ searchInput.addEventListener('input', function () {
 searchInput2.addEventListener('input', function () {
     document.getElementById('nor2').innerText = this.value;
 });
+searchInput3.addEventListener('input', function () {
+    document.getElementById('nor2').innerText = this.value;
+});
+
 
 // Handle user search/filtering in the list
 searchInput.addEventListener("input", (e) => {
@@ -370,6 +379,18 @@ searchInput.addEventListener("input", (e) => {
 });
 
 searchInput2.addEventListener("input", (e) => {
+    const value = e.target.value.toLowerCase();
+    let visibleCount = 0;
+    users.forEach(user => {
+        const isVisible = user.name.toLowerCase().includes(value) || user.email.toLowerCase().includes(value);
+        user.element.classList.toggle("hide", !isVisible);
+        user.element.style.display = isVisible ? "block" : "none";
+        visibleCount += isVisible ? 1 : 0;
+    });
+    document.getElementById('noresult').style.display = visibleCount > 0 ? "none" : "block";
+});
+
+searchInput3.addEventListener("input", (e) => {
     const value = e.target.value.toLowerCase();
     let visibleCount = 0;
     users.forEach(user => {
