@@ -65,7 +65,7 @@
 
 
         <div class="sm-col-12 col-12 d-lg-none d-md-none d-sm-block d-block">
-            <h1  class="topquote" style="font-size: 170%; line-height: 30px; text-align: center; margin-left: 10px;">Convinience Delivered just for you.</h1>
+            <h1  class="topquote" style="font-size: 170%; line-height: 30px; text-align: center; margin-left: 10px;"><span id="typed"></span><br> Delivered just for you.</h1>
             <h1  class="topquote2" style="font-size: 90%; font-family: 'Roboto';  text-align: center; line-height: 20px; margin-left: 0px; margin-top: 10px;">Tired of walking long distances daily to purchase groceries?</h1>
             
             <a href="#sear" style="text-decoration: none;">
@@ -250,7 +250,9 @@
     <div class="col-lg-6">
         <h1 class="enjoys">Enjoy A <br>Seamless <br>Shopping <br>Experience</h1>
         <p class="weare">Shop with shopal and do not regret. We are reliadble, <br>have fast delivery and we are efficient. Petronize us and be happy for life.</p>
-        <button class="butcont"><i class="fa-brands fa-whatsapp" style="font-size: 130%; font-weight: bold;color: #25d366;"></i> Contact</button>
+        <a href="https://wa.me/2348024687714?text=Hello... I have some enquires to make to SHOP PAL admin">
+            <button class="butcont"><i class="fa-brands fa-whatsapp" style="font-size: 130%; font-weight: bold;color: #25d366;"></i> Contact</button>
+        </a>
     </div>
     <div class="col-lg-6">
         <img src="Images1/Screenshot_2025-03-04-18-39-30-686_com.google.android.apps.photos-removebg.png" alt="" style="width: 53%; margin-left: 20%;" class="d-lg-block d-md-block d-sm-none d-none">
@@ -262,7 +264,7 @@
 
 
 
-<a href="https://wa.me/2348024687714?text=Hello... I have some enquires to make to shop pal admin" target="_blank">
+<a href="https://wa.me/2348024687714?text=Hello... I have some enquires to make to SHOP PAL admin" target="_blank">
     <div class="whatsappbut">
         <i class="fa-brands fa-whatsapp" style="font-size: 170%; font-weight: bold;color: white; text-align: center; margin-top: 27%;"></i>
     </div>
@@ -294,12 +296,24 @@
 
 
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@latest/dist/email.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
 <script src="https://checkout.flutterwave.com/v3.js"></script>
 
     <script>
       const side=document.getElementById('side');
       const side2=document.getElementById('side2');
+
+
+
+      var typed = new Typed("#typed", {
+    strings: ["Convinience", "Efficiency", "Quality"],
+    typeSpeed: 50,
+    backSpeed: 50,
+    backDelay: 1500,
+    startDelay: 500,
+    loop: true,
+  })
 
    function navo(){
     if(side.style.display==='none'||side.style.display===''){
