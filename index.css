@@ -1117,7 +1117,7 @@ input:focus{
     }
 
     .butcont{
-        background-color: greenyellow; color: white; padding: 9px; border: none;border-radius: 9px; margin-left: 7%; font-weight: bold; box-shadow: 1px 1px 4px #1842667a;
+        background-color: rgb(170, 219, 71); color: white; padding: 9px; border: none;border-radius: 9px; margin-left: 7%; font-weight: bold; box-shadow: 1px 1px 4px #1842667a;
     }
 
     .enjoy{

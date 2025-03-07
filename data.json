@@ -544,13 +544,13 @@
         "id": 91,
         "name": "Hollandia Evaporated Milk (160g)",
         "email": "520",
-        "image": "Images1/hollandia.jpg"
+        "image": "Images1/hollandiaev.jpg"
       },
       {
         "id": 92,
         "name": "Chi Exotic Juice (1L)",
         "email": "1300",
-        "image": "Images1/chiexotic.jpg"
+        "image": "Images1/exotic.jpg"
       },
       {
         "id": 93,
@@ -562,25 +562,25 @@
         "id": 94,
         "name": "Minimie Chin Chin (50g)",
         "email": "260",
-        "image": "Images1/minimie.jpg"
+        "image": "Images1/mini.jpg"
       },
       {
         "id": 95,
-        "name": "Gala Sausage Roll",
+        "name": "Pringles",
         "email": "455",
-        "image": "Images1/gala.jpg"
+        "image": "Images1/pringles.jpg"
       },
       {
         "id": 96,
         "name": "Supreme Ice Cream (500ml)",
         "email": "2600",
-        "image": "Images1/supreme.jpg"
+        "image": "Images1/ice.jpg"
       },
       {
         "id": 97,
-        "name": "Auntie B Spaghetti (500g)",
+        "name": "Ariel",
         "email": "1040",
-        "image": "Images1/auntieb.jpg"
+        "image": "Images1/ariel.jpg"
       },
       {
         "id": 98,
