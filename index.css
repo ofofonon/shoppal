@@ -1141,9 +1141,9 @@ input:focus{
         box-shadow: 3px 3px 7px #1842669d;
         position: fixed;
         bottom: 17%;
-        left: 80%;
+        left: 68%;
         text-align: center;
-        transform: scale(0.8,0.8);
+       
         
     }
 
