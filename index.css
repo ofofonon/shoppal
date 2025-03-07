@@ -679,6 +679,19 @@ input:focus{
     background-color: greenyellow; color: white; padding: 12px; border: none;border-radius: 9px; margin-left: 34%; font-weight: bold; box-shadow: 1px 1px 4px #1842667a;
 }
 
+.whatsappbut{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: greenyellow;
+    box-shadow: 3px 3px 7px #1842669d;
+    position: fixed;
+    bottom: 15%;
+    left: 87%;
+    text-align: center;
+    cursor: pointer;
+}
+
 
 
 
@@ -1119,4 +1132,20 @@ input:focus{
         background-color: rgb(223, 220, 220);
         margin-top: 0px;
     }
+
+    .whatsappbut{
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+        background-color: greenyellow;
+        box-shadow: 3px 3px 7px #1842669d;
+        position: fixed;
+        bottom: 17%;
+        left: 80%;
+        text-align: center;
+        transform: scale(0.8,0.8);
+        
+    }
+
+   
 }
