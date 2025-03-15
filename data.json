@@ -525,7 +525,7 @@
     {
       "id": 88,
       "name": "Gino Tomato paste",
-      "email": "variable",
+      "email": "550",
       "image": "Images1/gino.jpg"
     },
     {
@@ -586,43 +586,43 @@
         "id": 98,
         "name": "Crown Bread (Sliced, 500g)",
         "email": "910",
-        "image": "Images1/crownbread.jpg"
+        "image": "Images1/crown.jpg"
       },
       {
         "id": 99,
         "name": "Kings Vegetable Oil (3L)",
         "email": "6500",
-        "image": "Images1/kings.jpg"
+        "image": "Images1/king.jpg"
       },
       {
         "id": 100,
-        "name": "Ducros Curry Powder (50g)",
+        "name": "Golden Penny Macaroni",
         "email": "520",
-        "image": "Images1/ducros.jpg"
+        "image": "Images1/mac.jpg"
       },
       {
         "id": 101,
         "name": "Golden Penny Semovita (2kg)",
         "email": "2600",
-        "image": "Images1/semovita.jpg"
+        "image": "Images1/semo.jpg"
       },
       {
         "id": 102,
         "name": "Dangote Spaghetti (500g)",
         "email": "910",
-        "image": "Images1/dangotespaghetti.jpg"
+        "image": "Images1/dspag.jpg"
       },
       {
         "id": 103,
-        "name": "Nestle Milo (500g Tin)",
+        "name": "2Sure dishwashing liquid",
         "email": "4550",
-        "image": "Images1/nestlemilo.jpg"
+        "image": "Images1/2sure.jpg"
       },
       {
         "id": 104,
-        "name": "Horlicks (400g)",
+        "name": "RiceRoyal Stallion(25kg)",
         "email": "5200",
-        "image": "Images1/horlicks.jpg"
+        "image": "Images1/royal.jpg"
       },
       {
         "id": 105,
@@ -632,57 +632,57 @@
       },
       {
         "id": 106,
-        "name": "McVities Digestive Biscuits (250g)",
+        "name": "Fab Biscuits (250g)",
         "email": "1560",
-        "image": "Images1/mcvities.jpg"
+        "image": "Images1/fab.jpg"
       },
       {
         "id": 107,
-        "name": "Noreos Chocolate Biscuit (5 packs)",
+        "name": "Noreos Chocolate (5 packs)",
         "email": "1300",
         "image": "Images1/noreos.jpg"
       },
       {
         "id": 108,
-        "name": "Yaahoo Instant Noodles (120g)",
+        "name": "Dano cream milk",
         "email": "455",
-        "image": "Images1/yaahoo.jpg"
+        "image": "Images1/dan.jpg"
       },
       {
         "id": 109,
         "name": "Power Oil (750ml)",
         "email": "1950",
-        "image": "Images1/poweroil.jpg"
+        "image": "Images1/power.jpg"
       },
       {
         "id": 110,
-        "name": "Three Crowns Milk (400g Tin)",
+        "name": "Three Crowns Milk (Tin)",
         "email": "2600",
         "image": "Images1/threecrowns.jpg"
       },
       {
         "id": 111,
-        "name": "Happy Hour Orange Drink (500ml)",
+        "name": "Happy HourDrink ",
         "email": "650",
-        "image": "Images1/happyhour.jpg"
+        "image": "Images1/happy.jpg"
       },
       {
         "id": 112,
-        "name": "Pepsi Bottle (50cl)",
+        "name": "Grapes(Foriegn)",
         "email": "455",
-        "image": "Images1/pepsibottle.jpg"
+        "image": "Images1/grapes.jpg"
       },
       {
         "id": 113,
-        "name": "Nasco Cornflakes (500g)",
+        "name": "Basil leaves(spice supreme)",
         "email": "2600",
-        "image": "Images1/nascocornflakes.jpg"
+        "image": "Images1/basil.jpg"
       },
       {
         "id": 114,
-        "name": "Golden Penny Macaroni (500g)",
+        "name": "Chiken seasoning(spice supreme)",
         "email": "910",
-        "image": "Images1/goldenmacaroni.jpg"
+        "image": "Images1/chick.jpg"
       },
       {
         "id": 115,
@@ -692,21 +692,21 @@
       },
       {
         "id": 116,
-        "name": "Dano Full Cream Milk (400g Tin)",
+        "name": "Rosemary leaf (spice supreme)",
         "email": "3250",
-        "image": "Images1/danocream.jpg"
+        "image": "Images1/rose.jpg"
       },
       {
         "id": 117,
-        "name": "Honeywell Wheat Meal (2kg)",
+        "name": "Ground pepper(spice supreme)",
         "email": "3900",
-        "image": "Images1/honeywell.jpg"
+        "image": "Images1/pep.jpg"
       },
       {
         "id": 118,
-        "name": "Golden Penny Flour (2kg)",
+        "name": "Nutella",
         "email": "3250",
-        "image": "Images1/goldenpennyflour.jpg"
+        "image": "Images1/nutella.jpg"
       },
       {
         "id": 119,
@@ -718,7 +718,7 @@
         "id": 120,
         "name": "Dansa Pineapple Juice (1L)",
         "email": "1300",
-        "image": "Images1/dansa.jpg"
+        "image": "Images1/pine.jpg"
       }
     ]
     
