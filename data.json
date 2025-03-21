@@ -370,17 +370,17 @@
       "id": 62,
       "name": "Super Glue",
       "email": "650",
-      "image": "Images1/superglue.jpg"
+      "image": "Images1/glue.jpg"
     },
     {
       "id": 63,
       "name": "Toothpick Pack",
       "email": "260",
-      "image": "Images1/toothpick.jpg"
+      "image": "Images1/pick.jpg"
     },
     {
       "id": 64,
-      "name": "Heinz Ketchup (300g)",
+      "name": "Heinz Ketchup",
       "email": "2500",
       "image": "Images1/ketchup.jpg"
     },
@@ -394,7 +394,7 @@
       "id": 66,
       "name": "Dried thyme(10g)",
       "email": "650",
-      "image": "Images1/thyme.jpg"
+      "image": "Images1/thyme23.jpg"
     },
     {
       "id": 67,
@@ -410,9 +410,9 @@
     },
     {
       "id": 69,
-      "name": "Handkerchief (Pack of 3)",
+      "name": "Handkerchief",
       "email": "975",
-      "image": "Images1/kerchief.jpg"
+      "image": "Images1/kerchief12.jpg"
     },
     {
       "id": 70,
@@ -626,7 +626,7 @@
       },
       {
         "id": 105,
-        "name": "Bournvita (500g Tin)",
+        "name": "Bournvita(500g Tin)",
         "email": "4550",
         "image": "Images1/bournvita.jpg"
       },
