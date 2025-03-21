@@ -148,8 +148,8 @@ margin-top: -30px;
     width: 50px;
     background-color: rgb(245, 103, 51);
    position: absolute;
-   top: 23%;
-   left: 75.9%;
+   margin-left: 460px;
+   margin-top: -51px;
    border: none;
    border-radius: 50%;
 }
@@ -1145,6 +1145,17 @@ input:focus{
         text-align: center;
        
         
+    }
+
+    .sub{
+        height: 50px;
+        width: 50px;
+        background-color: rgb(245, 103, 51);
+       position: absolute;
+       margin-left: 0px;
+       margin-top: 0px;
+       border: none;
+       border-radius: 50%;
     }
 
    
