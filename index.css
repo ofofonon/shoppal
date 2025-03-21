@@ -878,16 +878,16 @@ input:focus{
     }
     
     .close{
-        background-color:  rgb(250, 246, 246);
+        background-color:  transparent;
         height: 40px;
         width: 40px;
         border-radius: 50%;
         position: fixed;
-        left: 83%;
-        top: 2%;
+        left: 82%;
+        top: 1.4%;
         cursor: pointer;
         z-index: 15;
-        box-shadow: 1px 1px 4px #1842667a;
+        box-shadow: 1px 1px 4px transparent;
         padding-top: -15px;
     }
     
