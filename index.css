@@ -274,16 +274,16 @@ margin-top: -30px;
 
 .header{
     display: flex;
-    width: 68%;
+    width: 100%;
     text-align: center;
     background-color: transparent;
     display: inline-block;
- 
-    font-size: 90%;
+ margin-left: -12px;
+    font-size: 85%;
     line-height: 20px;
     color: #184266;
     
-   
+
   
 
 }
@@ -363,7 +363,8 @@ margin-top: -30px;
     background-color: rgb(238, 235, 235);
     margin-top: 0px;
     width: 200px;
-    height: 300px;
+   min-height: 300px;
+   max-height: none;
     margin-left: 10px;
     border-radius: 18px;
     box-shadow: 1px 1px 4px #1842667a;
@@ -692,6 +693,9 @@ input:focus{
     cursor: pointer;
 }
 
+.kki{
+    text-align: center; display: none;
+}
 
 
 
@@ -749,8 +753,8 @@ input:focus{
 
     .cards{
         width: 40%;
-        
-        height: 200px;
+        min-height: 200px;
+        max-height: none;
         background-color: white;
         margin: 6px;
         margin-left: 10px;
@@ -773,28 +777,27 @@ input:focus{
     
     .header{
         
-        width: 130%;
-        
-        background-color: transparent;
        
         
+        background-color: transparent;
+       text-align: center;
+        margin-left: -19px;
         font-size: 76%;
         line-height: 20px;
         color: #184266;
-        padding-left: 3px;
        line-height: 13px;
       margin-top: 10px;
-      margin-left: -50%;
+     
     
     }
     
     .body{
-        
+        text-align: center;
      font-weight: bolder;
-     width: 150%;
+     width: 100%;
         font-size: 80%;
         color: #184266;
-       margin-left: -24%;
+      
         line-break: strict;
         line-height: 1px;
         margin-top: -20px;
@@ -895,7 +898,8 @@ input:focus{
         background-color: rgb(238, 235, 235);
         margin-top: 0px;
         width: 135%;
-        height: 133px;
+       min-height: 133px;
+       max-height: 133px;
         margin-left: -19%;
         border-radius: 18px;
         box-shadow: 1px 1px 4px #1842667a;
@@ -911,13 +915,38 @@ input:focus{
     
     .mad1{
         font-weight: bold;
-        float: left;
-        margin-left: 3%;
-        margin-top: 10px;
-        font-weight: 100;
-        font-size: 130%;
+        
        
-    }
+        font-weight: 100;
+        font-size: 110%;
+        white-space: nowrap;
+        display: inline-block;
+        animation: marquee 10s linear infinite;
+       
+      }
+      .scr2{
+        float: left;
+        width: 130px; /* Adjust width as needed */
+        overflow: hidden;
+        margin-left: 2%;
+        margin-top: 10px;
+        white-space: nowrap;
+        display: flex;
+        
+      }
+      .scr2::after {
+        content: attr(data-text); /* Duplicates the text */
+        padding-left: 20px; /* Space between repetitions */
+      }
+      
+      @keyframes marquee {
+        from {
+          transform: translateX(10%);
+        }
+        to {
+          transform: translateX(-100%);
+        }
+      }
 
     .cartsum{
         width: 90%;  background-color: rgb(245, 103, 51);position: absolute; z-index: 15;  top: 82%; border-radius: 10px; margin: 0; top: 1%; border-bottom-right-radius: 10px;left: 3%; z-index: 5; height: 200px; 
@@ -1158,5 +1187,11 @@ input:focus{
        border-radius: 50%;
     }
 
-   
+    #nor2{
+       
+    }
+    .kki{
+        text-align: center; display: none;
+        margin-left: -17%;
+    }
 }

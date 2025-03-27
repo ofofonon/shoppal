@@ -214,7 +214,9 @@ fetch("data.json")
                         detailsContainer.innerHTML += `
                             <div data-user-id="${userId}" class="mad" style="display: block;">
                                 <img src="${selectedUser.image}" class="itemimage1">
-                                <h3 class="mad1">${selectedUser.name}</h3>
+                              <div class="scr2"><h3 class="mad1 d-lg-none d-md-none d-sm-block d-block">${selectedUser.name}--${selectedUser.name}</h3>
+                              
+                              <h3 class="mad1 d-lg-block d-md-block d-sm-none d-none">${selectedUser.name}</h3></div>
                                <p>₦</p><p class="pr">${selectedUser.email}</p>
                                 <div class="num">
                                     <button class="gtm" style="cursor: pointer; border: none;">-</button>
