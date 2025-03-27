@@ -869,7 +869,7 @@ input:focus{
     
     .orderlist{
         width: 90%;
-        height: 550px;
+        height: 430px;
         background-color: rgb(250, 246, 246);
        left: 3%;
         border-radius: 12px;
@@ -921,7 +921,7 @@ input:focus{
         font-size: 110%;
         white-space: nowrap;
         display: inline-block;
-        animation: marquee 10s linear infinite;
+        animation: marquee 12s linear infinite;
        
       }
       .scr2{
