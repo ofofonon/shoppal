@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "name": "Cca Cola Coke(50cl)",
+    "name": "Coca Cola Coke(50cl)",
     "email": "715",
     "image": "Images1/coke.jpg"
   },
@@ -247,7 +247,7 @@
   },
   {
     "id": 42,
-    "name": "Oral-B Electric Toothbrush (pro series)",
+    "name": "Oral-B Electric Toothbrush",
     "email": "78000",
     "image": "Images1/oralb1.jpg"
   },
@@ -592,7 +592,7 @@
         "id": 99,
         "name": "Kings Vegetable Oil (3L)",
         "email": "16500",
-        "image": "Images1/king.jpg"
+        "image": "Images1/king3.jpg"
       },
       {
         "id": 100,
@@ -720,7 +720,189 @@
         "email": "1900",
         "image": "Images1/pine.jpg"
       }
+      ,
+      {
+        "id": 121,
+        "name": "Mamador Pure Vegetable Oil (1L)",
+        "image": "Images1/mamado2.jpg",
+        "email": "2500"
+      },
+      {
+        "id": 122,
+        "name": "Power Oil Sachet (100ml)",
+        "image": "Images1/power122.jpg",
+        "email": "450"
+      },
+      {
+        "id": 123,
+        "name": "Kings Vegetable Oil (2L)",
+        "image": "Images1/king2.jpg",
+        "email": "6900"
+      },
+      {
+        "id": 124,
+        "name": "Ola Ola Pounded Yam Flour (2kg)",
+        "image": "Images1/ola.jpg",
+        "email": "9000"
+      },
+      {
+        "id": 125,
+        "name": "Big Bull rice(50kg)",
+        "image": "Images1/bigbull.jpg",
+        "email": "50000"
+      },
+      {
+        "id": 126,
+        "name": "Tilda Basmati Rice (5kg)",
+        "image": "Images1/tilda.jpg",
+        "email": "30000"
+      },
+      {
+        "id": 127,
+        "name": "Play Station 5",
+        "image": "Images1/ps5.jpg",
+        "email": "900"
+      },
+      {
+        "id": 128,
+        "name": "Dangotte Salt(1kg)",
+        "image": "Images1/salt.jpg",
+        "email": "1000"
+      },
+      {
+        "id": 129,
+        "name": "Garri(1 bag)50kg",
+        "image": "Images1/garri.jpg",
+        "email": "43000"
+      },
+      {
+        "id": 130,
+        "name": "Ginger powder",
+        "image": "Images1/ginger.jpg",
+        "email": "1300"
+      },
+      {
+        "id": 131,
+        "name": "Gino Tomato Paste Sachet (70g)",
+        "image": "Images1/ginop.jpg",
+        "email": "300"
+      },
+      {
+        "id": 132,
+        "name": "Play station 4",
+        "image": "Images1/ps4.jpg",
+        "email": "1200"
+      },
+      {
+        "id": 133,
+        "name": "Beans Flour (1kg)",
+        "image": "Images1/bean.jpg",
+        "email": "2800"
+      },
+      {
+        "id": 134,
+        "name": "Mama Gold Semolina (2kg)",
+        "image": "Images1/mamagold.jpg",
+        "email": "2600"
+      },
+      {
+        "id": 135,
+        "name": "spice garlic 80g(AACE)",
+        "image": "Images1/garlic2.jpg",
+        "email": "1000"
+      },
+      {
+        "id": 136,
+        "name": "SuperPack Indomie Relish (200g)",
+        "image": "Images1/relish.jpg",
+        "email": "1800"
+      },
+      {
+        "id": 137,
+        "name": "Sunlight Detergent (900g)",
+        "image": "Images1/sunlilight2.jpg",
+        "email": "2200"
+      },
+      {
+        "id": 138,
+        "name": "Hypo Bleach Sachet (120ml)",
+        "image": "Images1/hypo2.jpg",
+        "email": "300"
+      },
+      {
+        "id": 139,
+        "name": "Hollandia Yoghurt (1L)",
+        "image": "Images1/holandia.jpg",
+        "email": "1800"
+      },
+      {
+        "id": 140,
+        "name": "Fayrouz Can (33cl)",
+        "image": "Images1/fayrouz.jpg",
+        "email": "600"
+      },
+      {
+        "id": 141,
+        "name": "Coca-Cola PET Bottle (50cl)",
+        "image": "Images1/coke2.jpg",
+        "email": "500"
+      },
+      {
+        "id": 142,
+        "name": "Checkers Custard vanilla(2kg)",
+        "image": "Images1/custard.jpg",
+        "email": "300"
+      },
+      {
+        "id": 143,
+        "name": "Checkers Milk Custard(2kg)",
+        "image": "Images1/custard2.jpg",
+        "email": "500"
+      },
+      {
+        "id": 144,
+        "name": "Nestlé Nescafé Classic coffee (50g)",
+        "image": "Images1/classic.jpg",
+        "email": "2500"
+      },
+      {
+        "id": 145,
+        "name": "Lucozade Boost (50cl)",
+        "image": "Images1/boost.jpg",
+        "email": "800"
+      },
+      {
+        "id": 146,
+        "name": "5Alive Pulpy Orange Juice (1L)",
+        "image": "Images1/alive.jpg",
+        "email": "1200"
+      },
+      {
+        "id": 147,
+        "name": "Quaker oat(tin)",
+        "image": "Images1/oat.jpg",
+        "email": "2100"
+      },
+      {
+        "id": 148,
+        "name": "Three Crowns Milk Powder (360g)",
+        "image": "Images1/crown2.jpg",
+        "email": "1800"
+      },
+      {
+        "id": 149,
+        "name": "Ribena (500ml)",
+        "image": "Images1/ribena2.jpg",
+        "email": "1500"
+      },
+      {
+        "id": 150,
+        "name": "Knife set",
+        "image": "Images1/knife.jpg",
+        "email": "500"
+      }
     ]
+    
     
   
 

@@ -1,5 +1,6 @@
 *{
     font-family: 'Poppins', sans-serif;
+    
 }
 
 
@@ -363,7 +364,7 @@ margin-top: -30px;
     background-color: rgb(238, 235, 235);
     margin-top: 0px;
     width: 200px;
-   min-height: 300px;
+  height: 300px;
    max-height: none;
     margin-left: 10px;
     border-radius: 18px;
@@ -376,10 +377,12 @@ margin-top: -30px;
     margin-top: -35px;
     transform: scale(0.7,0.7);
     
+    
 }
 
 .mad1{
     font-weight: bold;
+    font-size: 130%;
    
 }
 
