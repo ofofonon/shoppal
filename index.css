@@ -53,6 +53,25 @@ body{
     margin-left: 50px;
     margin-top: 10px;
 }
+
+.shopwith{
+    position: absolute;
+    font-size: 450%;
+    color: rgb(245, 103, 51);
+    font-weight: bolder;
+    top: 30%;
+    right: 15%;
+}
+
+.secshop{
+    position: absolute;
+    width: 30%;
+    top: 43%;
+    right: 12%;
+}
+
+
+
 .navimg{
     transform: scale(0.2,0.2);
     margin-left: -280px;
@@ -1175,6 +1194,7 @@ input:focus{
         bottom: 17%;
         left: 68%;
         text-align: center;
+        z-index: 50;
        
         
     }
