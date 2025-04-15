@@ -7,7 +7,7 @@ const searchInput3 = document.querySelector("[data-search2]");
 const cartno = document.getElementById('cartno');
 const cart = document.getElementById('cart');
 const detailsContainer = document.getElementById('itembox');
-const orderlist1 = document.getElementById('orderlist1');
+const orderlist1 = document.getElementById('orderlist122');
 
 
 

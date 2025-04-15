@@ -224,109 +224,111 @@
 </div>
 
 
-<div class="orderlistback" id="orderlist1">
-    <div class="orderlistback22">
-        
-        <div class="topcart d-lg-none d-md-none d-block">
-            <div class="row">
-                <div class="col-4">
-                    <div class="row">
-                        <div class="col-3">
-                            <div class="mhi d-flex align-items-center justify-content-center" style="text-align: center;">
-                                <i class="fa-solid fa-headset" style="color: white; font-size: 50%;  text-align: center; padding: 0;"></i>
+<div class="backbac" id="orderlist122">
+    <div class="orderlistback" id="orderlist1">
+        <div class="orderlistback22">
+            
+            <div class="topcart d-lg-none d-md-none d-block">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="row">
+                            <div class="col-3">
+                                <div class="mhi d-flex align-items-center justify-content-center" style="text-align: center;">
+                                    <i class="fa-solid fa-headset" style="color: white; font-size: 50%;  text-align: center; padding: 0;"></i>
+                                </div>
                             </div>
+                            <div class="col-9"><p style="color: white; font-size: 40%; margin-top: 6.2px;">24/7Support</p></div>
                         </div>
-                        <div class="col-9"><p style="color: white; font-size: 40%; margin-top: 6.2px;">24/7Support</p></div>
                     </div>
-                </div>
-                <div class="col-4">
-                    <div class="row">
-                        <div class="col-3">
-                            <div class="mhi d-flex align-items-center justify-content-center">
-                                <i class="fa-solid fa-bolt-lightning" style="color: white; font-size: 50%;  text-align: center; padding: 0;"></i>
+                    <div class="col-4">
+                        <div class="row">
+                            <div class="col-3">
+                                <div class="mhi d-flex align-items-center justify-content-center">
+                                    <i class="fa-solid fa-bolt-lightning" style="color: white; font-size: 50%;  text-align: center; padding: 0;"></i>
+                                </div>
                             </div>
+                            <div class="col-9"><p style="color: white; font-size: 50%; margin-top: 6.2px;">Fast delivery</p></div>
                         </div>
-                        <div class="col-9"><p style="color: white; font-size: 50%; margin-top: 6.2px;">Fast delivery</p></div>
                     </div>
-                </div>
-                <div class="col-4">
-                    <div class="row">
-                        <div class="col-3">
-                            <div class="mhi d-flex align-items-center justify-content-center">
-                                <i class="fa-solid fa-star" style="color: white; font-size: 50%;  text-align: center; padding: 0;"></i>
+                    <div class="col-4">
+                        <div class="row">
+                            <div class="col-3">
+                                <div class="mhi d-flex align-items-center justify-content-center">
+                                    <i class="fa-solid fa-star" style="color: white; font-size: 50%;  text-align: center; padding: 0;"></i>
+                                </div>
                             </div>
+                            <div class="col-9"><p style="color: white; font-size: 50%; margin-top: 6.2px;">Satisfaction</p></div>
                         </div>
-                        <div class="col-9"><p style="color: white; font-size: 50%; margin-top: 6.2px;">Satisfaction</p></div>
                     </div>
                 </div>
             </div>
+    
+    
+            <div class="close" onmousedown="closeorder()" style="text-align: center;"><i class="fa-solid fa-circle-chevron-left" style="font-size: 150%; color: #184266; text-align: center; margin-top: 25%;"></i></div>
+            
+                <div class="orderlist"  >
+                    <h1 class="carthead"> Order Summary</h1>
+                    <div id="orderlist"  >
+                        <div id="noitem" style="display: none; text-align: center; transform: scale(0.8,0.8);"><i class="noitemsign fa-solid fa-cart-plus" ></i><br><h1 style="color: #1842661e; font-weight: bold;">No Item Selected</h1></div>
+                    <div class="itembox" id="itembox">
+                    </div>
+                    </div>
+                    
+                </div>
+    
+                <div  class="cartsum">
+                    <h3 id="tot" class="toptotal"></h3>
+                    <p class="wii">What's included?</p>
+    
+                    <div class="row">
+                        
+                        <div class="col-1 col-lg-0 col-md-0 d-lg-none d-md-none"><div class="box23" style="text-align: center; color: white; font-weight: bolder; padding-top: 2px;">
+                            ₦
+                        </div></div>
+                        <div class="col-7 col-lg-12 col-md-12">
+                            <div class="row">
+                                <div class="col-12"><p  id="cartTotal"> </p></div>
+                                <div class="col-12 d-lg-none d-md-none"><p class="ded">Price of all items before additional fees and taxes</p></div>
+                            </div>
+                        </div>
+                        
+                    </div>
+    
+                    <div class="row">
+                        <div class="col-1 col-lg-0 col-md-0 d-lg-none d-md-none"><div class="box23" style="text-align: center;">
+                            <i class="fa-solid fa-truck" style="color: white; font-size: 75%; "></i>
+                        </div></div>
+                        <div class="col-7 col-lg-12 col-md-12">
+                            <div class="row">
+                                <div class="col-12"><p  id="trans"></p></div>
+                                <div class="col-12 d-lg-none d-md-none"><p class="ded">Standard delivery to your location within 24 hours</p></div>
+                            </div>
+                        </div>
+                        
+                    </div>
+    
+                    <div class="row">
+                        <div class="col-1 col-lg-0 col-md-0 d-lg-none d-md-none"><div class="box23" style="text-align: center;">
+                            <i class="fa-solid fa-boxes-stacked" style="color: white; font-size: 75%; "></i>
+                        </div></div>
+                        <div class="col-7 col-lg-12 col-md-12">
+                            <div class="row">
+                                <div class="col-12"><p  id="noi">Number of Items</p></div>
+                                <div class="col-12 d-lg-none d-md-none"><p class="ded" id="fge"></p></div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                     
+                    
+                    
+                    <button style=" border: none; background-color: #184266; color: white; width: 95%; margin-top: 0px; font-size: 105%; font-weight: bolder; border-radius: 12px; margin-left: 2.5%;  box-shadow: 1px 1px 4px #1842667a; padding: 12px;" onmousedown="showpay()" class="d-md-block d-lg-block d-sm-none d-none">Check out</button></div>
+    
+                 <div class="checkout">
+                    <button style=" border: none; background-color: #184266; color: white; width: 95%; margin-top: 13px; font-size: 90%; font-weight: bolder; border-radius: 12px; margin-left: 2.5%;  box-shadow: 1px 1px 4px #1842667a; padding: 12px;" onmousedown="showpay()"><i class="fa-solid fa-lock" style="font-size: 70%;"></i> Proceed to secure check out</button>
+                    <p style="text-align: center; font-size: 60%; margin-top: 8px;">All transactions are secure and encrypted</p>
+                 </div>   
         </div>
-
-
-        <div class="close" onmousedown="closeorder()" style="text-align: center;"><i class="fa-solid fa-circle-chevron-left" style="font-size: 150%; color: #184266; text-align: center; margin-top: 25%;"></i></div>
-        
-            <div class="orderlist"  >
-                <h1 class="carthead"> Order Summary</h1>
-                <div id="orderlist"  >
-                    <div id="noitem" style="display: none; text-align: center; transform: scale(0.8,0.8);"><i class="noitemsign fa-solid fa-cart-plus" ></i><br><h1 style="color: #1842661e; font-weight: bold;">No Item Selected</h1></div>
-                <div class="itembox" id="itembox">
-                </div>
-                </div>
-                
-            </div>
-
-            <div  class="cartsum">
-                <h3 id="tot" class="toptotal"></h3>
-                <p class="wii">What's included?</p>
-
-                <div class="row">
-                    
-                    <div class="col-1 col-lg-0 col-md-0 d-lg-none d-md-none"><div class="box23" style="text-align: center; color: white; font-weight: bolder; padding-top: 2px;">
-                        ₦
-                    </div></div>
-                    <div class="col-7 col-lg-12 col-md-12">
-                        <div class="row">
-                            <div class="col-12"><p  id="cartTotal"> </p></div>
-                            <div class="col-12 d-lg-none d-md-none"><p class="ded">Price of all items before additional fees and taxes</p></div>
-                        </div>
-                    </div>
-                    
-                </div>
-
-                <div class="row">
-                    <div class="col-1 col-lg-0 col-md-0 d-lg-none d-md-none"><div class="box23" style="text-align: center;">
-                        <i class="fa-solid fa-truck" style="color: white; font-size: 75%; "></i>
-                    </div></div>
-                    <div class="col-7 col-lg-12 col-md-12">
-                        <div class="row">
-                            <div class="col-12"><p  id="trans"></p></div>
-                            <div class="col-12 d-lg-none d-md-none"><p class="ded">Standard delivery to your location within 24 hours</p></div>
-                        </div>
-                    </div>
-                    
-                </div>
-
-                <div class="row">
-                    <div class="col-1 col-lg-0 col-md-0 d-lg-none d-md-none"><div class="box23" style="text-align: center;">
-                        <i class="fa-solid fa-boxes-stacked" style="color: white; font-size: 75%; "></i>
-                    </div></div>
-                    <div class="col-7 col-lg-12 col-md-12">
-                        <div class="row">
-                            <div class="col-12"><p  id="noi">Number of Items</p></div>
-                            <div class="col-12 d-lg-none d-md-none"><p class="ded" id="fge"></p></div>
-                        </div>
-                    </div>
-                    
-                </div>
-                 
-                
-                
-                <button style=" border: none; background-color: #184266; color: white; width: 95%; margin-top: 0px; font-size: 105%; font-weight: bolder; border-radius: 12px; margin-left: 2.5%;  box-shadow: 1px 1px 4px #1842667a; padding: 12px;" onmousedown="showpay()" class="d-md-block d-lg-block d-sm-none d-none">Check out</button></div>
-
-             <div class="checkout">
-                <button style=" border: none; background-color: #184266; color: white; width: 95%; margin-top: 13px; font-size: 90%; font-weight: bolder; border-radius: 12px; margin-left: 2.5%;  box-shadow: 1px 1px 4px #1842667a; padding: 12px;" onmousedown="showpay()"><i class="fa-solid fa-lock" style="font-size: 70%;"></i> Proceed to secure check out</button>
-                <p style="text-align: center; font-size: 60%; margin-top: 8px;">All transactions are secure and encrypted</p>
-             </div>   
     </div>
 </div>
 
