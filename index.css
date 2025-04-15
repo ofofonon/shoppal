@@ -342,6 +342,7 @@ margin-top: -30px;
     display: none;
     cursor: pointer;
     text-align: center;
+    z-index: 6;
 }
 
 .orderlistback{
@@ -351,11 +352,13 @@ margin-top: -30px;
     background-color: rgba(0, 0, 0, 0.363);
     top: 0;
     display: none;
+    z-index: 6;
 }
 
 .orderlist{
     width: 65%;
-    height: 496px;
+   min-height: 496px;
+   max-height: 496px;
     background-color: rgb(250, 246, 246);
    left: 7%;
     border-radius: 12px;
@@ -363,7 +366,7 @@ margin-top: -30px;
     position: absolute;
     top: 6%;
     overflow-y: scroll;
-    padding-bottom: 700px;
+    padding-bottom: 100px;
 }
 
 .close{
@@ -409,7 +412,7 @@ margin-top: -30px;
     width: 20%;
     border: none;
     background-color: transparent;
-    font-size: 200%;
+    font-size: 150%;
     color: rgb(245, 103, 51);
     margin-top: 0px;
 }
@@ -655,7 +658,7 @@ input:focus{
 }
 
 #cartTotal{
-    color: white;  margin-top: 30px; margin-left: 2%; font-family: 'Poppins', sans-serif;
+    color: white;  margin-top: 30px; margin-left: 0%; font-family: 'Poppins', sans-serif;
 }
 
 #noi{
@@ -713,6 +716,7 @@ input:focus{
     left: 87%;
     text-align: center;
     cursor: pointer;
+    z-index: 6;
 }
 
 .kki{
@@ -720,6 +724,16 @@ input:focus{
 }
 
 
+.wii{display: none;}
+
+.checkout{
+    display: none;
+}
+
+#orderlist{
+    margin-top: -100px;
+    background-color: transparent;
+}
 
 
 
@@ -878,29 +892,38 @@ input:focus{
         display: none;
         cursor: pointer;
         text-align: center;
+        z-index: 6;
     }
     
     .orderlistback{
         position: fixed;
         width: 100%;
         height: 1000px;
-        background-color: rgba(0, 0, 0, 0.363);
+        background-color: white;
         top: 0;
         display: none;
+        z-index: 6;
     }
     
     .orderlist{
-        width: 90%;
-        height: 550px;
+        min-height: 180px;
+        max-height: fit-content;
+        position: relative;
+        width: 92%;
+        border-top-right-radius: 7px;
+        border-top-left-radius: 7px;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
         background-color: rgb(250, 246, 246);
-       left: 3%;
-        border-radius: 12px;
-        padding-bottom: 3px;
-        position: absolute;
-        top: 22%;
-        overflow-y: scroll;
-        padding-bottom: 700px;
+        left: 0%;
+        top: 0%;
+        padding-bottom: 0px;
+
+        margin-top: 13px;
+        margin-left: 4%;
     }
+
+   
     
     .close{
         background-color:  transparent;
@@ -909,7 +932,7 @@ input:focus{
         border-radius: 50%;
         position: fixed;
         left: 82%;
-        top: 1.4%;
+        top: 7%;
         cursor: pointer;
         z-index: 15;
         box-shadow: 1px 1px 4px transparent;
@@ -917,30 +940,30 @@ input:focus{
     }
     
     .mad{
-        background-color: rgb(238, 235, 235);
+        background-color: transparent;
         margin-top: 0px;
         width: 135%;
        min-height: 133px;
        max-height: 133px;
         margin-left: -19%;
         border-radius: 18px;
-        box-shadow: 1px 1px 4px #1842667a;
+        box-shadow: none;
         text-align: center;
         padding: 1px;
         color: #184266;
         display: block;
-        margin-top: -20px;
+        margin-top: -60px;
         margin-bottom: 20px;
         
         
     }
     
     .mad1{
-        font-weight: bold;
+        font-weight: bolder;
         
        
-        font-weight: 100;
-        font-size: 110%;
+       
+        font-size: 100%;
         white-space: nowrap;
         display: inline-block;
         animation: marquee 12s linear infinite;
@@ -971,25 +994,58 @@ input:focus{
       }
 
     .cartsum{
-        width: 90%;  background-color: rgb(245, 103, 51);position: absolute; z-index: 15;  top: 82%; border-radius: 10px; margin: 0; top: 1%; border-bottom-right-radius: 10px;left: 3%; z-index: 5; height: 200px; 
+        position: relative; 
+        width: 92%;
+         background-color: rgb(250, 246, 246);
+         z-index: 15;  
+         margin: 0; 
+         left: 0%; 
+         color: #184266;
+         border-bottom-right-radius: 10px; 
+         border-bottom-left-radius: 10px;
+         border-top-right-radius: 0px;
+         border-top-left-radius: 0px;
+         height: 250px; 
+         margin-left: 4%;
+         margin-top: 0px;
+         margin-bottom: 100px;
+         text-align: start;
+    }
+
+    .checkout{
+        display: block;
+        width: 92%;
+        background-color: rgb(250, 246, 246);
+        z-index: 16; 
+        position: fixed;
+        border-radius: 7px;
+        height: 100px;
+        bottom: 0%;
+        left: 4%;
+       
+
     }
 
     #cartTotal{
-        color: white;  margin-top: 2px; margin-left: 0%; font-family: 'Poppins', sans-serif;
+        color: #184266;  margin-top: -3px;  font-family: 'Poppins', sans-serif; margin-left: 3%; font-size: 75%; font-weight: bolder;
     }
     
     #noi{
-        color: white;  margin-top: -5%; margin-left: 1%; font-family: 'Poppins', sans-serif;
+        color: #184266;  margin-top: -3%;  font-family: 'Poppins', sans-serif; margin-left: 3%; font-size: 75%; font-weight: bolder;
     }
     
     #trans{
-        color: white;  margin-top: -5%; margin-left: 1%; font-family: 'Poppins', sans-serif;
+        color: #184266;  margin-top: -3%;  font-family: 'Poppins', sans-serif;margin-left: 3%; font-size: 75%; font-weight: bolder;
+    }
+
+    .wii{
+        color: #184266;  margin-top: 0%; font-family: 'Poppins', sans-serif;margin-left: 7%; font-size: 100%; font-weight: bolder; display: block; 
     }
 
     .toptotal{
-        color: white;
+        color: #184266;
         font-weight: bolder;
-        margin-left: 3%;
+        margin-left: 7%;
         margin-top: -1%;
     }
 
@@ -1001,6 +1057,7 @@ input:focus{
         margin-left: 2%;
         margin-top: 2%;
         float: left;
+        transform: scale(0.9, 0.9);
     }
     .itembox{
         margin-left: 1.5%;
@@ -1070,6 +1127,7 @@ input:focus{
         display: none;
         cursor: pointer;
         text-align: center;
+        z-index: 6;
         
     }
 
@@ -1108,12 +1166,25 @@ input:focus{
         transform: scale(0.9,0.9);
     }
 
+    #orderlist{
+        background-color: white;
+        
+        margin-top: -60px;
+        border-radius: 7px;
+        
+    }
+    .hry{
+        background-color: white;
+    }
+
     .carthead{
         color: rgb(245, 103, 51);
         font-size: 200%;
         font-weight: bolder;
-        margin-left: -20%;
-        font-family: 'Roboto';
+        margin-left: -18%;
+        font-family: 'Poppins';
+       
+        margin-top: 17px;
         
     }
 
@@ -1216,5 +1287,39 @@ input:focus{
     .kki{
         text-align: center; display: none;
         margin-left: -17%;
+    }
+
+    .box23{
+        width: 27px;
+        height: 27px;
+        background-color: #184266;
+        border-radius: 4px;
+        padding: 0;
+        margin: 0;
+        margin-left: 10px;
+    }
+
+    .ded{
+        font-size: 68%;
+        padding-top: 0px;
+        margin-top: -17px;
+        margin-left: 3%;
+        
+
+    }
+
+    .topcart{
+        width: 100%;
+        height: 23px;
+        background-color: #184266;
+        margin-top: 0px;
+    }
+
+    .mhi{
+        height: 16px;
+        width: 16px;
+        border-radius: 50%;
+        background-color: rgb(245, 103, 51);
+        margin-top: 3.5px;
     }
 }

@@ -105,6 +105,7 @@ function updateItemCount() {
     const madDivs = document.querySelectorAll('.mad'); // Get all .mad divs
     const itemCount = madDivs.length; // Get the count of .mad divs
     itemCountDisplay.innerText = "Number of Items:" + itemCount; // Display the count
+    document.getElementById('fge').innerText = `Your order contains ${itemCount} items ready for delivery`
     cartno.innerHTML=itemCount;
     function noitem(){
         if(itemCount === 0){
@@ -223,7 +224,7 @@ fetch("data.json")
                                     <input type="number" class="numfig" value="1" min="1" />
                                     <button class="gt" style="cursor: pointer; border: none;">+</button>
                                 </div>
-                                <button class="bl"><i class="cl fa-solid fa-xmark "></i></button>
+                                <button class="bl"><i class="cl fa-solid fa-trash"></i></button>
                             </div>
                         `;
                         updateCartTotal();
