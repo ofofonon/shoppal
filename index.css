@@ -913,7 +913,7 @@ input:focus{
         background-color: white;
         top: 0;
         z-index: 6;
-        overflow-y: scroll;
+        
     }
     .backbac{
         width: 100%;
@@ -925,6 +925,7 @@ input:focus{
         display: none;
         z-index: 15;
         overflow-y: scroll;
+        background-color: white;
     }
     
     .orderlist{
@@ -1030,7 +1031,7 @@ input:focus{
          height: 300px; 
          margin-left: 4%;
          margin-top: 0px;
-         margin-bottom: 100px;
+         margin-bottom: 50px;
          text-align: start;
     }
 
