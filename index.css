@@ -3,7 +3,9 @@
     
 }
 
-
+html{
+    overflow-x: hidden;
+}
 body{
     background-color: rgb(250, 246, 246);
 }
@@ -743,6 +745,7 @@ input:focus{
     top: 0%;
     display: none;
    background-color: transparent;
+   z-index: 15;
 }
 
 
@@ -752,7 +755,19 @@ input:focus{
 
 @media (max-width: 768px) {
 
+    body{
+        overflow-x: hidden;
+    }
 
+    html{
+        overflow-x: hidden;
+    }
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
     ::-webkit-scrollbar {
         width: 0px;
@@ -917,7 +932,7 @@ input:focus{
     }
     .backbac{
         width: 100%;
-        height: 700px;
+        height: 750px;
         position: fixed;
         left: 0%;
         top: 0%;
