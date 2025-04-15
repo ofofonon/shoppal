@@ -312,7 +312,7 @@ fetch("data.json")
     console.log("Params to send:", params);
     // Send email using EmailJS
     emailjs
-      .send("service_cqlpxyd", "template_c6a0v6m", params)
+      .send("service_l7e9lrj", "template_c6a0v6m", params)
       .then(function (response) {
         alert("Cart details sent successfully!");
       })
