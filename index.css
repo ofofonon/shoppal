@@ -125,7 +125,7 @@ body{
 width: 100%;
 height: 350px;
 background-image: linear-gradient(to right,  transparent, transparent, rgb(250, 246, 246), rgb(250, 246, 246));
-margin-top: -30px;
+
 }
 
 .trs{
@@ -612,8 +612,8 @@ input:focus{
 }
 .tty{
     text-align: center;
-    font-family: 'Roboto';
-    font-weight: bold;
+    font-family: 'Poppins';
+    font-weight: bolder;
     font-size: 90%;
     color: #184266;
     margin-top: 10px;
@@ -754,6 +754,52 @@ input:focus{
 
 
 @media (max-width: 768px) {
+
+    select{
+        color: #091825;
+        font-family: 'Roboto';
+        font-weight: bold;
+        margin-top: -400px;
+        margin-bottom: 50px;
+        border-top: 1px solid #18426600;
+        border-left: 1px solid #18426600;
+        border-right: 1px solid #18426600;
+        border-bottom: 2px solid #18426693;
+        width: 80%;
+        margin-bottom: 14px;
+        margin-top: -100px;
+       
+    }
+
+    .for{
+    margin-top: 2%;
+    margin-left: 10%;
+    color: #18426693;
+}
+
+    .inp{
+        margin-top: -400px;
+        
+        border-top: 1px solid #18426600;
+        border-left: 1px solid #18426600;
+        border-right: 1px solid #18426600;
+        border-bottom: 2px solid #18426693;
+        width: 80%;
+        margin-bottom: 14px;
+        margin-top: -100px;
+        color: #091825;
+        font-family: 'Roboto';
+        font-weight: bold;
+        
+    }
+
+    .payhead{
+        font-weight: bold;
+        color: #184266;
+        font-size: 200%;
+        margin-left: 21%;
+        margin-top: 3%;
+    }
 
     body{
         overflow-x: hidden;
@@ -983,7 +1029,7 @@ input:focus{
         width: 135%;
        min-height: 133px;
        max-height: 133px;
-        margin-left: -19%;
+        margin-left: -11%;
         border-radius: 18px;
         box-shadow: none;
         text-align: center;
@@ -1263,7 +1309,7 @@ input:focus{
        display: none;
        opacity: 0%;
        transition: 0.5s;
-       
+       z-index: 7;
     
     }
 
@@ -1309,14 +1355,16 @@ input:focus{
     }
 
     .sub{
-        height: 50px;
-        width: 50px;
+        height: 43px;
+        width: 43px;
         background-color: rgb(245, 103, 51);
-       position: absolute;
-       margin-left: 253px;
-       margin-top: -44px;
+      position: absolute;
+      top: 167%;
+       margin-top: 0px;
+       margin-left: 0px;
        border: none;
        border-radius: 50%;
+       left: 70%;
     }
 
     #nor2{
