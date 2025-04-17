@@ -4,6 +4,7 @@ const userCardContainer = document.querySelector("[data-user-cards-container]");
 const searchInput = document.querySelector("[data-search]");
 const searchInput2 = document.querySelector("[data-search1]");
 const searchInput3 = document.querySelector("[data-search2]");
+const searchInput4 = document.querySelector("[data-search3]");
 const cartno = document.getElementById('cartno');
 const cart = document.getElementById('cart');
 const detailsContainer = document.getElementById('itembox');
@@ -354,6 +355,10 @@ searchInput2.addEventListener("input", function () {
 });
 
 searchInput3.addEventListener("input", function () {
+    searchInput.value = this.value;
+});
+
+searchInput4.addEventListener("input", function () {
     searchInput.value = this.value;
 });
 document.getElementById('nor').innerHTML=`No Items found for `;

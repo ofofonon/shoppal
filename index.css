@@ -1,6 +1,8 @@
 *{
     font-family: 'Poppins', sans-serif;
-    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html{
@@ -142,6 +144,7 @@ background-image: linear-gradient(to right,  transparent, transparent, rgb(250, 
     margin-left: 80px;
     margin-left: 70%;
     line-height: 30px;
+    font-size: 97%;
     
 }
 
@@ -243,6 +246,7 @@ background-image: linear-gradient(to right,  transparent, transparent, rgb(250, 
    display: none;
    opacity: 0%;
    transition: 0.5s;
+   z-index: 7;
 
 }
 
@@ -755,6 +759,11 @@ input:focus{
 
 @media (max-width: 768px) {
 
+    .ab2{
+        width: 100%;
+        height: 240px;
+        background-image: linear-gradient(to right,  transparent, transparent, rgb(250, 246, 246), rgb(250, 246, 246));}
+
     select{
         color: #091825;
         font-family: 'Roboto';
@@ -773,7 +782,7 @@ input:focus{
 
     .for{
     margin-top: 2%;
-    margin-left: 10%;
+    margin-left: 16%;
     color: #18426693;
 }
 
@@ -797,8 +806,8 @@ input:focus{
         font-weight: bold;
         color: #184266;
         font-size: 200%;
-        margin-left: 10%;
-        margin-top: 6%;
+        margin-left: 16%;
+        margin-top: 10%;
     }
 
     body{
@@ -918,7 +927,7 @@ input:focus{
     }
 
     .search2{
-        margin-top: 0px;
+        margin-top: 58px;
         width: 68%;
         border: 2px solid #184266c5;
         border-radius: 60px;
@@ -941,7 +950,7 @@ input:focus{
        position: absolute;
        margin-left: -49px;
        border: none;
-       margin-top: 0px;
+       margin-top: 58px;
        border-radius: 50%;
     }
 
@@ -1408,4 +1417,6 @@ input:focus{
         background-color: rgb(245, 103, 51);
         margin-top: 3.5px;
     }
+
+    
 }
