@@ -134,9 +134,9 @@ margin-top: 16px;
 .shop1{
     position: absolute;
     z-index: 9;
-    width: 45%;
-    left: 40%;
-    top: 50%;
+    width: 48%;
+    left: 40.5%;
+    top: 32%;
     transform: rotate(-7deg);
     opacity: 200%;
 }
