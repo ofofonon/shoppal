@@ -759,6 +759,21 @@ input:focus{
 
 @media (max-width: 768px) {
 
+
+
+    .top{
+        margin: 0px;
+    }
+    .topquote{
+        font-size: 270%;
+        font-weight: bolder;
+        font-family: 'Poppins', sans-serif;
+        color: #184266;
+        line-height: 45px;
+        margin-top: 160px;
+        margin-left: 5%;
+    }
+
     .ab2{
         width: 100%;
         height: 240px;
@@ -1239,6 +1254,7 @@ input:focus{
 
     #sear{
         margin-top: -50px;
+        width: min-content;
     }
 
 
@@ -1368,12 +1384,12 @@ input:focus{
         width: 43px;
         background-color: rgb(245, 103, 51);
       position: absolute;
-      top: 167%;
+      top: 108%;
        margin-top: 0px;
        margin-left: 0px;
        border: none;
        border-radius: 50%;
-       left: 70%;
+       left: 83.5%;
     }
 
     #nor2{

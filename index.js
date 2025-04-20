@@ -66,7 +66,7 @@ function makePayment() {
     }
 
     // Flutterwave Inline Checkout
-    FlutterwaveCheckout({
+   /* FlutterwaveCheckout({
         public_key: "FLWPUBK-fbc22cef3bd266be8cf8fc4880642ec1-X", // Replace with your actual Public Key
         tx_ref: "TX-" +  new Date().getTime(),  // Unique transaction reference
         amount: amount,  // Dynamically passed amount
@@ -84,6 +84,36 @@ function makePayment() {
         },
         onclose: function() {
             alert("Payment window closed.");
+        }
+    });*/
+    MonnifySDK.initialize({
+        amount: amount,
+        currency: "NGN",
+        reference: new String((new Date()).getTime()), // generate random reference
+        customerFullName: nam,
+        customerEmail: em,
+        customerMobileNumber: num,
+        apiKey: "MK_TEST_XHDWWV02NG", // <-- Insert your own
+        contractCode: "1537763867", // <-- Insert your own
+        paymentDescription: "Order Payment",
+        isTestMode: true, // change to false when going live
+        onLoadStart: () => {
+            console.log("Monnify pop-up loading...");
+        },
+        onLoadComplete: () => {
+            console.log("Monnify pop-up loaded!");
+        },
+        onComplete: function(response) {
+            console.log(response); // handle successful payment
+            if (response.paymentStatus === "PAID") {
+                alert("Payment successful! Transaction Reference: " + response.transactionReference);
+            } else {
+                alert("Payment not completed.");
+            }
+        },
+        onClose: function(data) {
+            console.log(data);
+            alert("Payment popup closed");
         }
     });
 }
