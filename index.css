@@ -1436,3 +1436,21 @@ input:focus{
 
     
 }
+
+
+@media (max-width: 425px) and (min-width: 376px){
+    .sub{
+        height: 43px;
+        width: 43px;
+        background-color: rgb(245, 103, 51);
+      position: absolute;
+      top: 108%;
+       margin-top: 0px;
+       margin-left: 0px;
+       border: none;
+       border-radius: 50%;
+       left: 85%;
+    }
+
+    
+}
