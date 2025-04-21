@@ -765,12 +765,12 @@ input:focus{
 
     .about2{
         display: block;
-        margin-top: 40px;
+        margin-top: 80px;
     }
 
     .abicon{
-        width: 40%;
-        margin-left: 30%;
+        width: 45%;
+        margin-left: 27.5%;
 
     }
 
@@ -784,7 +784,8 @@ input:focus{
     .ab2buttext{
         text-align: center;
         font-size: 90%;
-        padding: 2px;
+       margin: 5px;
+       line-height: 22px;
     }
 
 
@@ -1369,7 +1370,7 @@ input:focus{
     }
 
     .enjoys{
-        color: white; margin-left: 0%; margin-top: 17%;font-size: 200%; font-weight: bold;margin-left: 6%;
+        color: white; margin-left: 0%; margin-top: 110%;font-size: 200%; font-weight: bold;margin-left: 6%;
     }
 
     .weare{
@@ -1382,10 +1383,11 @@ input:focus{
     }
 
     .enjoy{
-        height: 400px;
+        height: 800px;
         width: 100%;
         background-color: rgb(245, 103, 51);
         margin-top: 60px;
+        clip-path: ellipse(160% 100% at 20% 100%);
     }
 
     .footer{
