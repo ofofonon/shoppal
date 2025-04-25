@@ -34,8 +34,8 @@ function updateCartTotal() {
 
     // Update the final total (cart total + added value)
     const finalTotal = total + addedValue;
-    document.getElementById('tot').innerText = `Total: ₦ ${finalTotal.toFixed(1)}`;
-    document.getElementById('last').innerHTML = `${finalTotal.toFixed(1)}`
+    document.getElementById('tot').innerText = `Total: ₦ ${finalTotal.toFixed(2)}`;
+    document.getElementById('last').innerHTML = `${finalTotal.toFixed(2)}`
 
    
 }
@@ -50,7 +50,7 @@ function makePayment() {
     console.log(amm)
     let amount = parseFloat(amm);
     let form = document.getElementById('paymentform');
-    const em = document.getElementById('email').value;
+    const email = document.getElementById('email').value;
     const num = document.getElementById('num').value;
     const nam = document.getElementById('name').value;
     
@@ -65,6 +65,31 @@ function makePayment() {
             return;
     }
 
+
+
+    
+        window.Korapay.initialize({
+          key: "pk_live_MxmZmHE4ayvrrGtp19u3mpLVdnfDVzU9GN8piBKm", // Replace with your Korapay test public key
+          reference: "KPY-" + Date.now() + "-" + Math.floor(Math.random() * 10000), // Generate a unique reference
+          amount: amount, // Amount in kobo (i.e. ₦30.00)
+          currency: "NGN",
+          customer: {
+            name: nam,
+            email: email
+          },
+          notification_url: "https://6abd-102-90-45-188.ngrok-free.app/webhook",
+          onSuccess: function (data) {
+            alert("Payment successful! Reference: " + data.reference);
+          },
+          onFailed: function (data) {
+            alert("Payment failed.");
+          },
+          onClose: function () {
+            console.log("Payment modal closed.");
+          }
+        });
+      
+      
     // Flutterwave Inline Checkout
    /* FlutterwaveCheckout({
         public_key: "FLWPUBK-fbc22cef3bd266be8cf8fc4880642ec1-X", // Replace with your actual Public Key
@@ -86,36 +111,37 @@ function makePayment() {
             alert("Payment window closed.");
         }
     });*/
-    MonnifySDK.initialize({
-        amount: amount,
-        currency: "NGN",
-        reference: new String((new Date()).getTime()), // generate random reference
-        customerFullName: nam,
-        customerEmail: em,
-        customerMobileNumber: num,
-        apiKey: "MK_TEST_XHDWWV02NG", // <-- Insert your own
-        contractCode: "1537763867", // <-- Insert your own
-        paymentDescription: "Order Payment",
-        isTestMode: true, // change to false when going live
-        onLoadStart: () => {
-            console.log("Monnify pop-up loading...");
-        },
-        onLoadComplete: () => {
-            console.log("Monnify pop-up loaded!");
-        },
-        onComplete: function(response) {
-            console.log(response); // handle successful payment
-            if (response.paymentStatus === "PAID") {
-                alert("Payment successful! Transaction Reference: " + response.transactionReference);
-            } else {
-                alert("Payment not completed.");
-            }
-        },
-        onClose: function(data) {
-            console.log(data);
-            alert("Payment popup closed");
+
+    
+   /* const createPayment = async () => {
+        try {
+          // Send POST request to the backend
+          const response = await fetch('http://localhost:3000/create-payment', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ amount, email }), // Send amount and email as JSON
+          });
+      
+          const data = await response.json();
+      
+          if (data.success) {
+            // Handle success (e.g., show the payment link, token, etc.)
+            console.log('Payment Created:', data);
+          } else {
+            // Handle failure
+            console.log('Error:', data.error);
+          }
+        } catch (error) {
+          console.error('Error:', error);
         }
-    });
+      };
+      createPayment();*/
+
+
+      
+
 }
 
 
