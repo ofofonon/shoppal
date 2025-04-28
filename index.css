@@ -756,8 +756,49 @@ input:focus{
     display: none;
 }
 
+.htocover{
+    width: 90%;
+    margin-left: 5%;
+    border-radius: 10px;
+    cursor: pointer;
+}
 
+.play-btn{
+    position: absolute;
+    margin-top: 20%;
+    left: 45%;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    background-color: rgb(245, 103, 51);
+    color: white;
+    text-align: center;
+   
+}
 
+.play-btn::before {
+    content: '';
+    position: absolute;
+    top: 50%; left: 50%;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: rgb(245, 103, 51);
+    transform: translate(-50%, -50%) scale(1);
+    animation: pulse-ring 1.8s ease-out infinite;
+  }
+  
+  @keyframes pulse-ring {
+    0% {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: translate(-50%, -50%) scale(2.5);
+      opacity: 0;
+    }
+  }
 
 
 
@@ -973,7 +1014,7 @@ input:focus{
     }
 
     .search2{
-        margin-top: 58px;
+        margin-top: 115px;
         width: 68%;
         border: 2px solid #184266c5;
         border-radius: 60px;
@@ -996,7 +1037,7 @@ input:focus{
        position: absolute;
        margin-left: -49px;
        border: none;
-       margin-top: 58px;
+       margin-top: 115px;
        border-radius: 50%;
     }
 
