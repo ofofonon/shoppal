@@ -765,8 +765,8 @@ input:focus{
 
 .play-btn{
     position: absolute;
-    margin-top: 20%;
-    left: 45%;
+    margin-top: 11%;
+    left: 65%;
     width: 45px;
     height: 45px;
     border: none;
@@ -788,6 +788,8 @@ input:focus{
     transform: translate(-50%, -50%) scale(1);
     animation: pulse-ring 1.8s ease-out infinite;
   }
+
+  
   
   @keyframes pulse-ring {
     0% {
@@ -800,9 +802,34 @@ input:focus{
     }
   }
 
+  
+  .htuy2{
+    padding-left: 20%;
+    font-size: 80%; 
+    padding-top: 40px;
+  }
 
 
 @media (max-width: 768px) {
+
+    .play-btn{
+        position: absolute;
+        margin-top: 20%;
+        left: 45%;
+        width: 45px;
+        height: 45px;
+        border: none;
+        border-radius: 50%;
+        background-color: rgb(245, 103, 51);
+        color: white;
+        text-align: center;
+       
+    }
+
+    .htuy2{
+        padding-left: 37%;
+      }
+
 
     .about2{
         display: block;
