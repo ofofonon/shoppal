@@ -439,7 +439,7 @@ background-image: linear-gradient(to right,  transparent, transparent, rgb(250, 
     font-size: 400%;
     font-weight: bolder;
     margin-left: -20%;
-    font-family: 'Roboto';
+    font-family: 'Poppins';
     transform: scale(0.6,0.6);
 }
 
@@ -487,7 +487,7 @@ background-image: linear-gradient(to right,  transparent, transparent, rgb(250, 
 .toptotal{
     color: white;
     font-weight: bolder;
-    margin-left: 3%;
+    margin-left: 5%;
     margin-top: 18%;
 }
 
@@ -660,19 +660,22 @@ input:focus{
 }
 
 .cartsum{
-    width: 20%;  background-color: rgb(245, 103, 51);position: fixed; z-index: 15;  top: 82%; border-radius: 10px; margin: 0; top: 6%; border-bottom-right-radius: 10px;left: 73%; z-index: 5; height: 300px; text-align: center;
+    width: 20%;  background-color: rgb(245, 103, 51);position: fixed; z-index: 15;  top: 82%; border-radius: 10px; margin: 0; top: 6%; border-bottom-right-radius: 10px;left: 73%; z-index: 5; height: 435px; text-align: start;
+    
 }
 
 #cartTotal{
-    color: white;  margin-top: 30px; margin-left: 0%; font-family: 'Poppins', sans-serif;
+    color: white;  margin-top: 0px; margin-left: 0%; font-family: 'Poppins', sans-serif; font-size: 100%; font-weight: bolder;
 }
 
 #noi{
-    color: white;  margin-top: 0%; margin-left: 1%; font-family: 'Poppins', sans-serif;
+    color: white;  margin-top: 0%; margin-left: 0%; font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
 }
 
 #trans{
-    color: white;  margin-top: 0%; margin-left: 1%; font-family: 'Poppins', sans-serif;
+    color: white;  margin-top: 0%; margin-left: 0%; font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
 }
 
 .fa-cart-shopping{
@@ -730,7 +733,11 @@ input:focus{
 }
 
 
-.wii{display: none;}
+.wii{
+    display: block;
+    margin-top: 0%; font-family: 'Poppins', sans-serif;margin-left: 7%; font-size: 105%; font-weight: bolder;
+
+}
 
 .checkout{
     display: none;
@@ -789,6 +796,28 @@ input:focus{
     animation: pulse-ring 1.8s ease-out infinite;
   }
 
+
+
+  .box23{
+    width: 27px;
+    height: 27px;
+    background-color: #184266;
+    border-radius: 4px;
+    padding: 0;
+    margin: 0;
+    margin-left: 5px;
+}
+
+
+.ded{
+    font-size: 72%;
+    padding-top: 0px;
+    margin-top: -17px;
+    margin-left: 3%;
+    
+
+}
+
   
   
   @keyframes pulse-ring {
@@ -808,6 +837,77 @@ input:focus{
     font-size: 80%; 
     padding-top: 40px;
   }
+
+
+  .loader{
+    display: block;
+    background-color: white;
+    width: 100%;
+    height: 700px;
+    z-index: 35;
+    position: fixed;
+    top: 0;
+    transition: opacity 2s, visibility 2s;
+}
+
+.loader-hidden{
+    opacity: 0;
+    visibility: hidden;
+  }
+
+.loader::after{
+    content: "";
+   
+  }
+
+.mr{
+    width: 105px;
+    height: 105px;
+    border-radius: 50%;
+    background-color: transparent;
+    border-left: 6px solid  rgb(245, 103, 51);
+    position: absolute;
+   animation-name: turn;
+    animation-iteration-count: infinite;
+    animation-duration: 1.3s;
+
+}
+
+.fr{
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    background-color: transparent;
+    border-top:rgb(245, 103, 51) solid 6px;
+    animation-name: turn2;
+    animation-iteration-count: infinite;
+    animation-duration: 1.3s;  
+}
+
+@keyframes turn{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(260deg);}
+}
+
+@keyframes turn2{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(-440deg);}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media (max-width: 768px) {
