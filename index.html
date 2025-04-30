@@ -573,14 +573,28 @@
 
 
 
-      window.addEventListener("load", () =>{
+      window.addEventListener("load", () => {
     const loader = document.querySelector(".loader");
 
+    // Automatically hide loader after 10 seconds as a fallback
+    const maxWait = setTimeout(() => {
+        hideLoader();
+    }, 10000); // 10000 milliseconds = 10 seconds
+
+    // Also hide it when the page finishes loading
     loader.classList.add("loader-hidden");
 
-    loader.addEventListener("transitioned", () =>{
-        document.body.replaceChild("loader");
-    })
+    // Wait for the transition to end before removing it
+    loader.addEventListener("transitionend", () => {
+        hideLoader();
+        clearTimeout(maxWait); // Cancel timeout if it was already hidden
+    });
+
+    function hideLoader() {
+        if (loader && loader.parentNode) {
+            loader.parentNode.removeChild(loader);
+        }
+    }
 })
 
       var typed = new Typed("#typed", {
