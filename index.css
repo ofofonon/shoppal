@@ -839,6 +839,20 @@ input:focus{
   }
 
 
+  .loader2{
+    display: block;
+    background-color: white;
+    width: 100%;
+    height: 700px;
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.2s;
+}
+
+
   .loader{
     display: block;
     background-color: white;
@@ -895,8 +909,192 @@ input:focus{
 }
 
 
+.htpsecured{
+margin-top: 4%;
+text-align: center;
+font-size: 80%;
+color: rgb(245, 103, 51);
+}
 
 
+
+
+.howtopay{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(250, 246, 246);
+    position: fixed;
+    z-index: 88;
+    top: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.2s  ease-in;
+    
+}
+
+.htpin{
+    width: 30%;
+    height: 300px;
+    margin-left: 35%;
+    margin-top: 1%;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 8px 10px 15px rgb(207, 207, 207);
+    position: relative;
+    z-index: 7;
+    transition: all 0.4s;
+
+}
+
+.htphow{
+    font-weight: bolder;
+    text-align: center;
+    padding-top: 13%;
+}
+
+.htptrans{
+    width: 85%;
+    height: 30%;
+    margin-left: 7.5%;
+    background-color: rgb(250, 246, 246);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-top: 10%;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.htptrans:hover{
+    background-color: rgb(235, 233, 233);
+}
+
+.htppay{
+    font-weight: bolder;
+    font-size: 90%;
+    margin-left: 5%;
+}
+
+.fa-building-columns{
+    font-size: 150%;
+    color:  rgb(245, 103, 51) ;
+    margin-left: 10%;
+    margin-top: -14px;
+}
+
+#bankt{
+    width: 30%;
+    height: 550px;
+    margin-left: 35%;
+    margin-top: 1%;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 8px 10px 15px rgb(207, 207, 207);
+    position: absolute;
+    top: 12%;
+    z-index: 5;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s;
+    text-align: center;
+}
+
+#payht{
+    font-weight: bolder;
+    margin-top: 10px;
+}
+
+.ttca{
+    font-weight: bolder;
+    font-size: 70%;
+    color: rgb(245, 103, 51);
+    opacity: 70%;
+}
+
+.betrans{
+    font-weight: bolder;
+    font-size: 110%;
+    margin-top: 10%;
+}
+
+.terms{
+    width: 85%;
+    margin-left: 7.5%;
+    height: 60%;
+    border-radius: 20px;
+    background-color: rgb(250, 246, 246);
+    transition:all 0.3s;
+    
+}
+.understsnd{
+    font-size: 80%;
+    color: rgb(245, 103, 51);
+    text-align: start;
+    padding-left: 12%;
+    font-weight: bolder;
+    margin-top: 10%;
+}
+
+.continue{
+    width: 85%;
+    height: 50px;
+    border-radius: 13px;
+    margin-left: 2%;
+    color: white;
+    background-color: rgb(245, 103, 51);
+    border: none;
+    font-weight: bolder;
+    margin-top: 7%;
+    opacity: 0.4;
+}
+
+.acc{
+    width: 85%;
+    height: 150px;
+    border-radius: 20px;
+    background-color: rgb(250, 246, 246);
+    top: 30%;
+    margin-left: 7.5%;
+    position: absolute;
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.paymentconf{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(250, 246, 246);
+    z-index: 90;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.fa-circle-check{
+    margin-left: 47%;
+    transition: 1s;
+    animation-name: pulse1;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pulse1{
+    0%{transform: scale(1,1);}
+    50%{transform: scale(1.2,1.2);}
+    100%{transform: scale(1,1);}
+}
+
+.fa-circle-info{
+    margin-left: 60px; opacity: 50%;
+}
+
+.fa-circle-check{
+    font-size: 550%; color: rgb(245, 103, 51); margin-top: 15%;
+}
 
 
 
@@ -911,6 +1109,51 @@ input:focus{
 
 
 @media (max-width: 768px) {
+
+
+    .fa-circle-check{
+        font-size: 550%; color: rgb(245, 103, 51); margin-top: 40%;
+        margin-left: 39%;
+    }
+
+
+    #bankt{
+        width: 90%;
+        height: 550px;
+        margin-left: 5%;
+        margin-top: 1%;
+        background-color: white;
+        border-radius: 20px;
+        box-shadow: 8px 10px 15px rgb(207, 207, 207);
+        position: absolute;
+        top: 12%;
+        z-index: 5;
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.3s;
+        text-align: center;
+    }
+
+    .fa-circle-info{
+        margin-left: 20px; opacity: 50%;
+    }
+
+    .htpin{
+        width: 90%;
+        height: 300px;
+        margin-left: 5%;
+        margin-top: 1%;
+        background-color: white;
+        border-radius: 20px;
+        box-shadow: 8px 10px 15px rgb(207, 207, 207);
+        position: relative;
+        z-index: 7;
+        transition: all 0.4s;
+    
+    }
+
+
+
     .loader{
         display: block;
         background-color: white;

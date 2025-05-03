@@ -401,9 +401,9 @@
 
 <div class="payinfo" id="payinfo">
     <div class="payclose" style="text-align: center; cursor: pointer;" onmousedown="closepay()"><i class="fa-solid fa-xmark " style="font-size: 130%; color: #184266; text-align: center; margin-top: 30%;"></i></div>
-    <div class="payinfofront">
+    <div class="payinfofront" data-aos="zoom-in-up">
         <div class="payhead"><p><span style="font-weight: bolder;">Fill the form </span></p><br>
-        <p class="paysubhead">We'll get back to you shortly</p>
+        <p class="paysubhead" data-aos="fade-up">We'll get back to you shortly</p>
         </div>
         <form action="" class="for" id="paymentform">
             <p class="inptext" >Name</p>
@@ -506,11 +506,65 @@
 
 
 
+  <div class="loader2 d-flex justify-content-center align-items-center" id="loader2">
+    <img src="Images1/SHOPtop.PNG" alt="" style="position: absolute; width: 50px;">
+    <div class="mr d-flex justify-content-center align-items-center">
+      <div class="fr">
+       
+      </div>
+    </div>
+
+  </div>
+
+
+  <div class="howtopay" id="htp">
+    <i class="fa-solid fa-circle-xmark" style="position: absolute; top: 26%; left: 66%; font-size: 105%; cursor: pointer;" onmousedown="closetotalpay()"></i>
+    <p class="htpsecured"><i class="fa-solid fa-lock"></i> Secured by <span style="font-weight: bolder;">Shop pay</span></p>
+    <div class="htpin" id="htpin">
+        <h5 class="htphow">How would you like to pay?</h5>
+        <div class="htptrans d-flex align-items-center" onmousedown="banktrans()">
+            <i class="fa-solid fa-building-columns"></i><h6 class="htppay">Pay with bank transfer<i class="fa-solid fa-circle-info" ></i></h6>
+        </div>
+    </div>
+
+    <div class="bankt"  id="bankt">
+        <i class="fa-solid fa-building-columns" style="margin-left: 0%; margin-top: 10%;"></i>
+        <h5 id="payht"></h5>
+        <p class="ttca">Tap to copy amount</p>
+        <h5 class="betrans" id="btrans">Before you make this transfer</h5>
+        <div class="terms" id="terms">
+            <p style="text-align: start; font-size: 80%; padding-top: 10%; margin-left: 12%;"><span style="font-weight: bolder;">Transfer only the exact amount</span> <br> Do not transfer an incorrect ammount</p>
+
+            <p style="text-align: start; font-size: 80%; padding-top: 1%; margin-left: 12%;"><span style="font-weight: bolder;">Do not save or reuse the account</span> It can<br>only accept a single transfer</p>
+
+            <p style="text-align: start; font-size: 80%; padding-top: 1%; margin-left: 12%;">The account expires after<span style="font-weight: bolder;">a fixed time</span></p>
+
+            <div  class="understsnd">
+                <input type="checkbox" style="text-align: start; margin-right: 10px; padding-top: 50px;" id="checkbox" onchange="check()">I Understand these instructions
+
+                <button class="continue" id="cont">Continue</button>
+            </div>
+        </div>
+
+        <div class="acc" id="acc">
+            <h6 style="font-size: 100%; font-weight: bolder; margin-top: 10px;">Opay</h6>
+            <h5 style="font-size: 150%; font-weight: bolder; color: rgb(245, 103, 51);">6103936868</h5>
+            <p style="font-size: 90%;">Account Name: <span style="font-weight: bolder;">Victor Ukpe</span></p>
+            <p style="font-size: 70%;">This account expires in <span id="timer" style="font-weight: bolder;">30:00</span></p>
+
+            <button class="continue" style="opacity: 1; margin-top: 70px;" onmousedown="loadshow2()">I've made payment</button>
+        </div>
+    </div>
+  </div>
 
 
 
-
-
+  <div class="paymentconf" id="paymentconf">
+    <i class="fa-solid fa-circle-xmark" style="position: absolute; top: 5%; left: 86%; font-size: 205%; cursor: pointer;" onmousedown="closetotalpay()"></i>
+    <i class="fa-solid fa-circle-check" ></i>
+    <h1 style="font-size: 200%; font-weight: bolder; text-align: center; margin-top: 30px;">Transfer Successful</h1>
+    <p style="text-align: center; color: rgb(245, 103, 51); font-weight: bold; cursor: pointer;" onmousedown="closetotalpay()">Make another order</p>
+  </div>
 
 
 
@@ -563,6 +617,28 @@
 
 <script src="https://checkout.flutterwave.com/v3.js"></script>
 <script>
+    let duration = 30 * 60; // 30 minutes in seconds
+    const display = document.getElementById('timer');
+  
+    const countdown = setInterval(() => {
+      let minutes = Math.floor(duration / 60);
+      let seconds = duration % 60;
+  
+      // Pad numbers
+      minutes = minutes < 10 ? '0' + minutes : minutes;
+      seconds = seconds < 10 ? '0' + seconds : seconds;
+  
+      display.textContent = `${minutes}:${seconds}`;
+  
+      if (duration <= 0) {
+        clearInterval(countdown);
+        display.textContent = "Time's up!";
+      }
+  
+      duration--;
+    }, 1000);
+  </script>
+<script>
     AOS.init();
   </script>
 
@@ -576,18 +652,18 @@
       window.addEventListener("load", () => {
     const loader = document.querySelector(".loader");
 
-    // Automatically hide loader after 10 seconds as a fallback
+    // Automatically hide loader after 9 seconds as a fallback
     const maxWait = setTimeout(() => {
-        hideLoader();
-    }, 10000); // 10000 milliseconds = 10 seconds
+        loader.classList.add("loader-hidden"); // trigger transition
+    }, 9000);
 
-    // Also hide it when the page finishes loading
+    // Hide immediately when the page loads
     loader.classList.add("loader-hidden");
 
     // Wait for the transition to end before removing it
     loader.addEventListener("transitionend", () => {
         hideLoader();
-        clearTimeout(maxWait); // Cancel timeout if it was already hidden
+        clearTimeout(maxWait); // stop the fallback
     });
 
     function hideLoader() {
@@ -595,7 +671,11 @@
             loader.parentNode.removeChild(loader);
         }
     }
-})
+});
+
+
+
+
 
       var typed = new Typed("#typed", {
     strings: ["Convinience", "Efficiency", "Quality"],
@@ -642,6 +722,9 @@
     side2.style.display='none'
     side.style.display='none'
    }
+
+
+   
 
 
 

@@ -36,7 +36,7 @@ function updateCartTotal() {
     const finalTotal = total + addedValue;
     document.getElementById('tot').innerText = `Total: ₦ ${finalTotal.toFixed(2)}`;
     document.getElementById('last').innerHTML = `${finalTotal.toFixed(2)}`
-
+    document.getElementById('payht').innerText = `Pay: NGN ${finalTotal.toFixed(2)}`;
    
 }
 
@@ -53,7 +53,10 @@ function makePayment() {
     const email = document.getElementById('email').value;
     const num = document.getElementById('num').value;
     const nam = document.getElementById('name').value;
-    
+    const loader = document.getElementById("loader2");
+    const htp = document.getElementById("htp");
+     const bankt = document.getElementById("bankt");
+     const htpin = document.getElementById("htpin");
     
     
     if (amount <= 0 || isNaN(amount)) {
@@ -66,9 +69,28 @@ function makePayment() {
     }
 
 
+    function loadshow(){
+        loader.style.visibility = 'visible';
+        loader.style.opacity = '1';
+
+        htp.style.visibility = 'visible';
+        htp.style.opacity = '1';
+        bankt.style.visibility = 'hidden';
+        bankt.style.opacity = '0';
+        htpin.style.visibility = 'visible';
+        htpin.style.opacity = '1';
+        setTimeout(function(){
+            loader.style.visibility = 'hidden';
+        loader.style.opacity = '0';
+        
+        }, 2556);
+    }
+
+    loadshow()
+
 
     
-        window.Korapay.initialize({
+       /* window.Korapay.initialize({
           key: "pk_live_MxmZmHE4ayvrrGtp19u3mpLVdnfDVzU9GN8piBKm", // Replace with your Korapay test public key
           reference: "KPY-" + Date.now() + "-" + Math.floor(Math.random() * 10000), // Generate a unique reference
           amount: amount, // Amount in kobo (i.e. ₦30.00)
@@ -87,7 +109,7 @@ function makePayment() {
           onClose: function () {
             console.log("Payment modal closed.");
           }
-        });
+        });*/
       
       
     // Flutterwave Inline Checkout
@@ -113,31 +135,7 @@ function makePayment() {
     });*/
 
     
-   /* const createPayment = async () => {
-        try {
-          // Send POST request to the backend
-          const response = await fetch('http://localhost:3000/create-payment', {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({ amount, email }), // Send amount and email as JSON
-          });
-      
-          const data = await response.json();
-      
-          if (data.success) {
-            // Handle success (e.g., show the payment link, token, etc.)
-            console.log('Payment Created:', data);
-          } else {
-            // Handle failure
-            console.log('Error:', data.error);
-          }
-        } catch (error) {
-          console.error('Error:', error);
-        }
-      };
-      createPayment();*/
+   
 
 
       
@@ -145,6 +143,21 @@ function makePayment() {
 }
 
 
+
+function banktrans(){
+    const bankt = document.getElementById('bankt');
+    const htpin = document.getElementById("htpin");
+    const terms = document.getElementById("terms");
+
+    htpin.style.opacity = '0';
+    htpin.style.visibility = 'hidden';
+    bankt.style.visibility = 'visible';
+    bankt.style.opacity = '1';
+    terms.style.visibility = 'visible';
+    terms.style.opacity = '1';
+    
+    
+}
 
 
 
@@ -332,7 +345,7 @@ fetch("data.json")
         emailjs.init("RA1Kqya_IGt_DITwX"); // Replace with your actual EmailJS Public Key
       })();
 
-  function sendCartDetails() {
+ /* function sendCartDetails() {
     // Get all cart items
     
     const madDivs = document.querySelectorAll('.mad'); // Get all cart items
@@ -371,13 +384,13 @@ fetch("data.json")
     emailjs
       .send("service_l7e9lrj", "template_c6a0v6m", params)
       .then(function (response) {
-        alert("Cart details sent successfully!");
+        console.log("Cart details sent successfully!");
       })
       .catch(function (error) {
         alert("Failed to send cart details. Try again!");
         console.error("EmailJS Error:", error);
       });
-  }
+  }*/
 
 
     // Call this function to test
@@ -475,6 +488,63 @@ searchInput3.addEventListener("input", (e) => {
 
 
 
+function check(){
+    const checkbox = document.getElementById('checkbox');
+    const cont = document.getElementById('cont');
+    const terms = document.getElementById('terms');
+    const btrans = document.getElementById('btrans');
+    const acc = document.getElementById('acc');
+
+    if(!checkbox.checked){
+        cont.style.opacity='0.4'
+        console.log('checkbox not checked')
+    } else if(checkbox.checked){
+        
+        cont.style.opacity='1'
+        console.log('checkbox checked')
+        cont.addEventListener('click', function(){
+            terms.style.visibility = 'hidden';
+            terms.style.opacity = '0'
+            btrans.style.opacity = '0'
+            acc.style.visibility = 'visible';
+            acc.style.opacity = '1'
+        })
+    }
+
+
+
+}
+
+
+
+
+
+function loadshow2(){
+
+    const loader2 = document.getElementById("loader2");
+    const htp = document.getElementById("htp");
+    const pconf = document.getElementById("paymentconf");
+    const htpin = document.getElementById('htpin');
+    const bankt = document.getElementById('bankt');
+
+    loader2.style.visibility = 'visible';
+    loader2.style.opacity = '1';
+
+    htp.style.visibility = 'hidden';
+    htp.style.opacity = '0';
+    pconf.style.visibility = 'visible';
+    pconf.style.opacity = '1';
+    htpin.style.opacity = '0';
+    htpin.style.visibility = 'hidden';
+    bankt.style.opacity = '0';
+    bankt.style.visibility = 'hidden';
+    setTimeout(function(){
+        loader2.style.visibility = 'hidden';
+    loader2.style.opacity = '0';
+    
+    }, 7056);
+}
+
 
 
 
@@ -525,6 +595,29 @@ function showpay(){
 function closepay(){
     document.getElementById('payinfo').style.display='none'
 }
+
+function closetotalpay(){
+    const tpay = document.getElementById('htp');
+    const pcon = document.getElementById('paymentconf');
+    const htpin = document.getElementById('htpin');
+    const bankt = document.getElementById('bankt');
+    const acc = document.getElementById('acc');
+    
+    tpay.style.opacity = '0';
+    tpay.style.visibility = 'hidden';  
+    pcon.style.opacity = '0';
+    pcon.style.visibility = 'hidden';
+    htpin.style.opacity = '0';
+    htpin.style.visibility = 'hidden';
+    bankt.style.opacity = '0';
+    bankt.style.visibility = 'hidden';
+    acc.style.opacity = '0';
+    acc.style.visibility = 'hidden';
+    document.getElementById('payinfo').style.display='none'
+
+}
+
+
 
 
 
