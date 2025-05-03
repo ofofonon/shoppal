@@ -12,7 +12,7 @@ const orderlist1 = document.getElementById('orderlist122');
 
 
 
-let addedValue = 100; // You can change this value to any fixed amount (e.g., $10)
+let addedValue = 3000; // You can change this value to any fixed amount (e.g., $10)
 
 // Element to display the added value
 const addedValueDisplay = document.getElementById('trans');
