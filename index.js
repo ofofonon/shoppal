@@ -345,7 +345,7 @@ fetch("data.json")
         emailjs.init("RA1Kqya_IGt_DITwX"); // Replace with your actual EmailJS Public Key
       })();
 
- /* function sendCartDetails() {
+ function sendCartDetails() {
     // Get all cart items
     
     const madDivs = document.querySelectorAll('.mad'); // Get all cart items
@@ -390,7 +390,7 @@ fetch("data.json")
         alert("Failed to send cart details. Try again!");
         console.error("EmailJS Error:", error);
       });
-  }*/
+  }
 
 
     // Call this function to test
