@@ -638,6 +638,41 @@
       duration--;
     }, 1000);
   </script>
+
+  <script>
+const loader = document.getElementById('load'); // e.g., <div id="loader" class="loader">...</div>
+
+// Flag to ensure the loader is hidden/removed only once
+let loaderRemoved = false;
+
+/**
+ * Hide (fade out) the loader and remove it from the DOM.
+ * Called either on window load or after a 9-second timeout, whichever comes first.
+ */
+function hideLoader() {
+  if (loaderRemoved || !loader) return;  // Do nothing if already handled or missing
+  loaderRemoved = true;
+
+ 
+  loader.classList.add('loader-hidden');
+
+  
+  loader.addEventListener('transitionend', () => {
+    loader.remove();
+  }, { once: true }); 
+
+ 
+  setTimeout(() => {
+    if (loader.parentNode) {
+      loader.remove();
+    }
+  }, 1000);
+}
+
+window.addEventListener('load', hideLoader);
+setTimeout(hideLoader, 9000);
+
+  </script>
 <script>
     AOS.init();
   </script>
@@ -649,29 +684,7 @@
 
 
 
-      window.addEventListener("load", () => {
-    const loader = document.querySelector(".loader");
-
-    // Automatically hide loader after 9 seconds as a fallback
-    const maxWait = setTimeout(() => {
-        loader.classList.add("loader-hidden"); // trigger transition
-    }, 9000);
-
-    // Hide immediately when the page loads
-    loader.classList.add("loader-hidden");
-
-    // Wait for the transition to end before removing it
-    loader.addEventListener("transitionend", () => {
-        hideLoader();
-        clearTimeout(maxWait); // stop the fallback
-    });
-
-    function hideLoader() {
-        if (loader && loader.parentNode) {
-            loader.parentNode.removeChild(loader);
-        }
-    }
-});
+     // Select the loader element (adjust selector to match your HTML)
 
 
 
@@ -738,5 +751,6 @@
 
 
     </script>
+    
 </body>
 </html>
