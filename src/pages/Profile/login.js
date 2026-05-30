@@ -1,5 +1,9 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { signInWithPopup } from "firebase/auth";
+import { googleProvider } from "../../firebase";
+import { setDoc } from "firebase/firestore";
+
 
 import { signInWithEmailAndPassword } from "firebase/auth";
 
@@ -11,10 +15,7 @@ import {
 } from "firebase/firestore";
 
 import { auth, db } from "../../firebase";
-
-import { useEffect } from "react";
-
-import { onAuthStateChanged } from "firebase/auth";
+import { onAuthStateChanged, signOut } from "firebase/auth";
 
 export default function Login() {
   const [email, setEmail] = useState("");
@@ -22,131 +23,147 @@ export default function Login() {
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
 
+  const handleGoogleAuth = async () => {
+    try {
+      const result = await signInWithPopup(auth, googleProvider);
+      const user = result.user;
+  
+      // check if user exists in Firestore
+      const userRef = doc(db, "users", user.uid);
+      const userSnap = await getDoc(userRef);
+  
+      // if new user → create profile
+      if (!userSnap.exists()) {
+        await setDoc(userRef, {
+          uid: user.uid,
+          name: user.displayName,
+          email: user.email,
+          role: "consumer", // default role
+          createdAt: new Date().toISOString(),
+          emailVerified: user.emailVerified,
+        });
+      }
+  
+      // redirect
+      navigate("/");
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   const navigate = useNavigate();
 
   useEffect(() => {
-    const unsub = onAuthStateChanged(auth, (user) => {
-      if (user) {
-        navigate("/", { replace: true }); // or dashboard/profile
+    const unsub = onAuthStateChanged(auth, async (user) => {
+  
+      if (!user) return;
+  
+      await user.reload();
+  
+      if (!user.emailVerified) {
+        await signOut(auth);
+        navigate("/verify", { replace: true });
+        return;
       }
-      
+  
+      navigate("/", { replace: true });
     });
-
+  
     return () => unsub();
   }, []);
-  
 
   const handleLogin = async () => {
-
     setError("");
-  
+
     if (!email || !password) {
       return setError("Fill all fields");
     }
 
-
     setLoading(true);
 
     try {
-  
-      // LOGIN USER
-      const userCredential =
-        await signInWithEmailAndPassword(
-          auth,
-          email,
-          password
-        );
-          
-      const user = userCredential.user;
+      const userCredential = await signInWithEmailAndPassword(
+        auth,
+        email,
+        password
+      );
+
+      
+      // 🔥 ALWAYS take fresh auth state
+      const user = auth.currentUser;
+      
+      await user.reload();
+      
+      // 🔥 NOW CHECK VERIFIED STATE PROPERLY
+      if (!auth.currentUser.emailVerified) {
+        await signOut(auth);
+        setLoading(false);
+        return setError("Please verify your email before logging in.");
+      }
 
       await updateDoc(doc(db, "users", user.uid), {
         lastLogin: new Date().toISOString(),
       });
-  
-      // GET USER DATA
+
       const userRef = doc(db, "users", user.uid);
-
-      
-  
       const userSnap = await getDoc(userRef);
-      
+
       setLoading(false);
+
       if (userSnap.exists()) {
-
         const userData = userSnap.data();
-  
-        // REDIRECT BASED ON ROLE
-        if (userData.role === "admin") {
 
-          // SECURITY LOG
-          await updateDoc(
-            doc(db, "users", user.uid),
-            {
-              securityLogs: arrayUnion({
-                action: "Admin logged in",
-                createdAt:
-                  new Date().toISOString(),
-              }),
-            }
-          );
-        
-          navigate("/admin-profile", {
-            replace: true,
+        if (userData.role === "admin") {
+          await updateDoc(doc(db, "users", user.uid), {
+            securityLogs: arrayUnion({
+              action: "Admin logged in",
+              createdAt: new Date().toISOString(),
+            }),
           });
-        
+
+          navigate("/admin-profile", { replace: true });
+
         } else if (userData.role === "vendor") {
-  
-          navigate("/vendor-profile" , { replace: true });
-  
+          navigate("/vendor-profile", { replace: true });
+
         } else {
-  
-          navigate("/" , { replace: true });
-  
+          navigate("/", { replace: true });
         }
-  
       }
-  
+
     } catch (error) {
       setLoading(false);
-      console.log(error);
-  
+
       switch (error.code) {
-  
         case "auth/user-not-found":
           setError("No account found");
           break;
-  
+
         case "auth/wrong-password":
           setError("Incorrect password");
           break;
-  
+
         case "auth/invalid-email":
           setError("Invalid email");
           break;
-  
+
         case "auth/invalid-credential":
           setError("Incorrect email or password");
           break;
-  
+
         case "auth/too-many-requests":
           setError("Too many attempts. Try again later");
           break;
-  
+
         case "auth/network-request-failed":
           setError("Network error");
           break;
-  
+
         default:
           setError("Login failed");
-  
       }
-  
     }
-
-   
-  
   };
-
 
   return (
     <div className="space-y-6">
@@ -160,7 +177,7 @@ export default function Login() {
         </p>
       </div>
 
-      <button className="w-full py-3 rounded-xl bg-white text-black flex items-center justify-center gap-2 hover:bg-white/90 transition">
+      <button className="w-full py-3 rounded-xl bg-white text-black flex items-center justify-center gap-2 hover:bg-white/90 transition" onClick={handleGoogleAuth}>
         <img
           src="https://www.svgrepo.com/show/475656/google-color.svg"
           alt="google"
@@ -169,14 +186,12 @@ export default function Login() {
         Continue with Google
       </button>
 
-      {/* DIVIDER */}
       <div className="flex items-center gap-3 text-white/30 text-xs font-montserrat">
         <div className="flex-1 h-px bg-white/10" />
         OR
         <div className="flex-1 h-px bg-white/10" />
       </div>
 
-      {/* EMAIL */}
       <input
         type="email"
         className="w-full p-3 rounded-xl bg-white/5 border border-white/10 focus:border-orange-500 outline-none font-montserrat"
@@ -185,7 +200,6 @@ export default function Login() {
         onChange={(e) => setEmail(e.target.value)}
       />
 
-      {/* PASSWORD */}
       <input
         type="password"
         className="w-full p-3 rounded-xl bg-white/5 border border-white/10 focus:border-orange-500 outline-none font-montserrat"
@@ -194,41 +208,27 @@ export default function Login() {
         onChange={(e) => setPassword(e.target.value)}
       />
 
-      {/* BUTTON */}
-            <button
+      <button
         onClick={handleLogin}
         disabled={loading}
         className={`w-full py-3 rounded-xl transition-all font-semibold font-montserrat flex items-center justify-center gap-2
-
-        ${
-          loading
-            ? "bg-orange-400 cursor-not-allowed"
-            : "bg-orange-500 hover:bg-orange-600"
-        }`}
+        ${loading ? "bg-orange-400 cursor-not-allowed" : "bg-orange-500 hover:bg-orange-600"}`}
       >
-
-        {
-          loading ? (
-            <>
-              <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin"></div>
-              Logging in...
-            </>
-          ) : (
-            "Login"
-          )
-        }
-
+        {loading ? (
+          <>
+            <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin"></div>
+            Logging in...
+          </>
+        ) : (
+          "Login"
+        )}
       </button>
 
-      {
-  error && (
-    <div className="text-red-400 text-sm font-montserrat bg-red-500/10 border border-red-500/20 rounded-xl p-3">
-      {error}
-    </div>
-  )
-}
-
-      {/* GOOGLE */}
+      {error && (
+        <div className="text-red-400 text-sm font-montserrat bg-red-500/10 border border-red-500/20 rounded-xl p-3">
+          {error}
+        </div>
+      )}
 
       <p className="text-center text-sm text-white/50">
         Don’t have an account?{" "}

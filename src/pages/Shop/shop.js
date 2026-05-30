@@ -237,7 +237,7 @@ export default function ShopPage({ addToCart, cartItems }) {
                   </div>
                 </div>
 
-                <div className="p-4">
+                <div className="px-4 p-4 pt-2">
                   <h3 className="font-medium text-sm md:text-base line-clamp-1">
                     {product.name}
                   </h3>

@@ -125,7 +125,7 @@ export default function ShopShowcase() {
     return enriched
       .filter(Boolean)
       .filter(
-        (shop) => shop.distance <= 20
+        (shop) => shop.distance <= 200
       );
 
   }, [vendors, userLocation]);
@@ -174,7 +174,7 @@ export default function ShopShowcase() {
       </div>
 
       {/* MOBILE SCROLL */}
-      <div className="md:hidden flex gap-4 overflow-x-auto no-scrollbar snap-x snap-mandatory pb-4 scrollbar-hide">
+      <div className="lg:hidden flex gap-4 overflow-x-auto no-scrollbar snap-x snap-mandatory pb-4 scrollbar-hide">
 
         {nearbyShops.map((shop) => (
 
@@ -192,7 +192,7 @@ export default function ShopShowcase() {
       </div>
 
       {/* DESKTOP BENTO LAYOUT */}
-      <div className="hidden md:grid grid-cols-12 gap-5 auto-rows-auto scrollbar-hide">
+      <div className="hidden lg:grid grid-cols-12 gap-5 auto-rows-auto scrollbar-hide">
 
         {nearbyShops.map((shop) => (
 

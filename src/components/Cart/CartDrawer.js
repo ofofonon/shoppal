@@ -338,10 +338,10 @@ const subtotal = cartItems.reduce(
               </div>
 
               <button
-                className="text-red-400 text-sm hover:text-red-300 transition-all"
+                className="text-red-400 text-sm hover:text-red-300 transition-all mt-[-20%]"
                 onClick={() => removeItem(item.id)}
               >
-                Remove
+                <i class="fa-solid fa-trash-can text-lg "></i>
               </button>
 
             </div>

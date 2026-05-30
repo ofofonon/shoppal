@@ -16,7 +16,7 @@ export default function FAQPage() {
     },
     {
       q: "Do you offer refunds?",
-      a: "Refunds are processed within 3–7 business days after inspection."
+      a: "Refunds are processed within 3–7 business days after close inspection."
     },
     {
       q: "How can I contact support?",

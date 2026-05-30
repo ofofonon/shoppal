@@ -38,6 +38,9 @@ const BuyPage = () => {
   
   const navigate = useNavigate();
   const { user } = useContext(AuthContext);
+
+  const isLoggedIn = user !== null;
+
   const reviews = [
     {
       name: "Amara K.",
@@ -125,16 +128,18 @@ const BuyPage = () => {
 
             <div className="flex items-center gap-4">
 
-      {user ? (
+      {isLoggedIn  ? (
         // 👇 LOGGED IN STATE
         <div
-          onClick={() => navigate(
+        onClick={() =>
+          navigate(
             user.role === "admin"
               ? "/admin-profile"
               : user.role === "vendor"
               ? "/vendor-profile"
               : "/user-profile"
-          )}
+          )
+        }
           className="flex items-center gap-2 cursor-pointer bg-white pr-2 py-0 rounded-full"
         >
           <div className="w-10 h-10 rounded-full bg-[#111111] flex items-center justify-center text-white font-bold">

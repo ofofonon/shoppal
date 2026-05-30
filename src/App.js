@@ -32,6 +32,7 @@ import Loader from "./components/Loader";
 import AboutPage from "./pages/about";
 import ContactPage from "./pages/contact";
 import FAQPage from "./pages/faq";
+import VerifyEmail from "./pages/VerifyEmail";
 
 
 
@@ -233,6 +234,11 @@ function App() {
       <Route
         path="/faq"
         element={<FAQPage addToCart={addToCart}/>}
+      />
+
+      <Route
+        path="/verify"
+        element={<VerifyEmail addToCart={addToCart}/>}
       />
 
       <Route
