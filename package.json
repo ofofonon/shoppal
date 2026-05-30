@@ -1,0 +1,255 @@
+{
+  
+
+"name": "afrivate-project",
+  
+
+"version": "0.1.0",
+  
+
+"private": true,
+  
+
+"homepage": ".",
+  
+
+"dependencies": {
+  
+
+  
+
+"@emailjs/browser": "^4.4.1",
+  
+
+  
+
+"@heroicons/react": "^2.1.1",
+  
+
+  
+
+"@testing-library/jest-dom": "^5.17.0",
+  
+
+  
+
+"@testing-library/react": "^13.4.0",
+  
+
+  
+
+"@testing-library/user-event": "^13.5.0",
+  
+
+  
+
+"firebase": "^12.10.0",
+  
+
+  
+
+"framer-motion": "^12.35.2",
+  
+
+  
+
+"html2pdf.js": "^0.14.0",
+  
+
+  
+
+"react": "^18.2.0",
+  
+
+  
+
+"react-dom": "^18.2.0",
+  
+
+  
+
+"react-router-dom": "^6.22.1",
+  
+
+  
+
+"react-scripts": "5.0.1",
+  
+
+  
+
+"web-vitals": "^2.1.4"
+  
+
+},
+  
+
+"scripts": {
+  
+
+  
+
+"start": "react-scripts start",
+  
+
+  
+
+"build": "react-scripts build",
+  
+
+  
+
+"test": "react-scripts test",
+  
+
+  
+
+"eject": "react-scripts eject",
+  
+
+  
+
+"gen:webp": "node scripts/generate-webp.js",
+  
+
+  
+
+"predeploy": "npm run build",
+  
+
+  
+
+"deploy": "gh-pages -d build"
+  
+
+},
+  
+
+"eslintConfig": {
+  
+
+  
+
+"extends": [
+  
+
+  
+
+  
+
+"react-app",
+  
+
+  
+
+  
+
+"react-app/jest"
+  
+
+  
+
+]
+  
+
+},
+  
+
+"browserslist": {
+  
+
+  
+
+"production": [
+  
+
+  
+
+  
+
+">0.2%",
+  
+
+  
+
+  
+
+"not dead",
+  
+
+  
+
+  
+
+"not op_mini all"
+  
+
+  
+
+],
+  
+
+  
+
+"development": [
+  
+
+  
+
+  
+
+"last 1 chrome version",
+  
+
+  
+
+  
+
+"last 1 firefox version",
+  
+
+  
+
+  
+
+"last 1 safari version"
+  
+
+  
+
+]
+  
+
+},
+  
+
+"devDependencies": {
+  
+
+  
+
+"autoprefixer": "^10.4.17",
+  
+
+  
+
+"gh-pages": "^6.3.0",
+  
+
+  
+
+"postcss": "^8.4.35",
+  
+
+  
+
+"sharp": "^0.33.2",
+  
+
+  
+
+"tailwindcss": "^3.4.1"
+  
+
+}
+}
