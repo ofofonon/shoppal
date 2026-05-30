@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.0f6d5f3d.css",
-    "main.js": "./static/js/main.f2a823a1.js",
+    "main.css": "./static/css/main.6574e5b5.css",
+    "main.js": "./static/js/main.ff42f3f6.js",
     "static/js/453.8910648d.chunk.js": "./static/js/453.8910648d.chunk.js",
     "static/media/Vary_Image_-_Produce_this_image_in_the_highest_quality_possible__make_it_sharp_and_good.png": "./static/media/Vary_Image_-_Produce_this_image_in_the_highest_quality_possible__make_it_sharp_and_good.0d3604548513dc4dee57.png",
     "static/media/Ora design.PNG": "./static/media/Ora design.3a148597052c151cb661.PNG",
@@ -32,12 +32,12 @@
     "static/media/Nano_Banana_2_-_Produce_this_image_in_the_highest_quality_possible__make_it_sharp_and_good__DO_NOT_T.jpg": "./static/media/Nano_Banana_2_-_Produce_this_image_in_the_highest_quality_possible__make_it_sharp_and_good__DO_NOT_T.c07f3dff80a0e517d962.jpg",
     "static/media/logo.PNG": "./static/media/logo.dba2e0cd340249e7dd6e.PNG",
     "index.html": "./index.html",
-    "main.0f6d5f3d.css.map": "./static/css/main.0f6d5f3d.css.map",
-    "main.f2a823a1.js.map": "./static/js/main.f2a823a1.js.map",
+    "main.6574e5b5.css.map": "./static/css/main.6574e5b5.css.map",
+    "main.ff42f3f6.js.map": "./static/js/main.ff42f3f6.js.map",
     "453.8910648d.chunk.js.map": "./static/js/453.8910648d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0f6d5f3d.css",
-    "static/js/main.f2a823a1.js"
+    "static/css/main.6574e5b5.css",
+    "static/js/main.ff42f3f6.js"
   ]
 }
