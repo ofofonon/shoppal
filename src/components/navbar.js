@@ -21,6 +21,8 @@ const Navbar = ({ setCartOpen, cartItems }) => {
 
   const navigate = useNavigate();
 
+ 
+
   const totalItems = cartItems?.reduce(
     (acc, item) => acc + item.quantity,
     0
@@ -35,7 +37,7 @@ const Navbar = ({ setCartOpen, cartItems }) => {
   }, []);
 
   // ✅ IMPORTANT FIX: only treat verified users as logged in
-  const isLoggedIn = user !== null;
+  const isLoggedIn = !!user;
 
   
 

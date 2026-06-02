@@ -4,7 +4,7 @@ import logo from "./logo.PNG"
 const shop = {
     id: "shop001",
   
-    vendorId: "Gyios8XHV6Vi0gpsr8GzRqcvUrv1",
+    vendorId: "1ZsSv7znpvWw2aRtHKmJfhU4lPD3",
   
     slug: "shoppal-foods",
   

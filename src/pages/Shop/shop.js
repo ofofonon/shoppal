@@ -166,21 +166,21 @@ export default function ShopPage({ addToCart, cartItems }) {
       </div>
 
       {/* PRODUCTS SECTION */}
-      <div className="px-4 md:px-12 py-10">
+      <div className="px-4 md:px-12 md:py-10 py-6">
 
         {/* HEADER */}
         <div className="mb-8">
           <h2 className="text-2xl md:text-4xl font-bric font-semibold">
             Popular Items
           </h2>
-          <p className="text-white/45 mt-2">
+          <p className="text-white/45 mt-2 text-xs md:text-base">
             Curated products from this shop.
           </p>
         </div>
 
         {/* ✅ SEARCH BAR */}
         <div className="mb-6">
-          <div className="flex items-center bg-[#0d0d0d] border border-white/5 rounded-full px-4 h-[58px]">
+          <div className="flex items-center bg-[#0d0d0d] border border-white/5 rounded-full px-4 h-[58px] thin-scrollbar">
             <i className="fa-solid fa-magnifying-glass text-white/40 "></i>
 
             <input
@@ -188,7 +188,7 @@ export default function ShopPage({ addToCart, cartItems }) {
               placeholder={`Search in ${shop.name}...`}
               value={search}
               onChange={(e) => setSearch(e.target.value)}
-              className="bg-transparent outline-none flex-1 px-3 text-sm text-white font-montserrat"
+              className="bg-transparent outline-none flex-1 md:px-3 px-2 md:text-sm text-xs text-white font-montserrat thin-scrollbar"
             />
 
             {search && (
@@ -200,7 +200,7 @@ export default function ShopPage({ addToCart, cartItems }) {
         </div>
 
         {/* CATEGORY FILTER */}
-        <div className="flex gap-3 overflow-x-auto no-scrollbar pb-3 mb-8">
+        <div className="flex gap-3 overflow-x-auto no-scrollbar pb-3 mb-8 thin-scrollbar">
           {categories.map((category) => (
             <button
               key={category}
@@ -223,22 +223,22 @@ export default function ShopPage({ addToCart, cartItems }) {
             filteredProducts.map((product) => (
               <div
                 key={product.id}
-                className="group bg-[#0d0d0d] border border-white/5 rounded-[28px] overflow-hidden hover:border-white/10 transition-all duration-300"
+                className="group bg-[#0d0d0d] border border-white/5 rounded-[28px] overflow-hidden hover:border-white/10 transition-all duration-300 "
               >
-                <div className="relative overflow-hidden aspect-square">
+                <div className="relative overflow-hidden ">
                   <img
                     src={product.image}
                     alt={product.name}
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    className="w-full md:h-[170px] h-[110px] object-cover transition-transform duration-700 group-hover:scale-110 md:text-base text-sm"
                   />
 
-                  <div className="absolute top-3 right-3 bg-black/60 backdrop-blur-md px-3 py-1 rounded-full text-sm">
+                  <div className="absolute top-3 right-3 bg-black/60 backdrop-blur-md px-3 py-1 rounded-full md:text-sm text-xs">
                     ₦{product.price}
                   </div>
                 </div>
 
                 <div className="px-4 p-4 pt-2">
-                  <h3 className="font-medium text-sm md:text-base line-clamp-1">
+                  <h3 className="font-medium text-sm md:text-base line-clamp-2">
                     {product.name}
                   </h3>
 
@@ -249,7 +249,7 @@ export default function ShopPage({ addToCart, cartItems }) {
                   <button
                     onClick={() => handleAddToCart(product)}
                     disabled={isInCart(product.id) || loadingId === product.id}
-                    className={`mt-4 w-full py-2 rounded-full transition-all duration-300 text-sm font-montserrat flex items-center justify-center gap-2
+                    className={`md:mt-4 mt-2 w-full md:py-2 py-2 rounded-full transition-all duration-300 md:text-sm text-xs font-montserrat flex items-center justify-center md:gap-2 gap-1
                       ${
                         isInCart(product.id)
                           ? "bg-green-500 text-white"

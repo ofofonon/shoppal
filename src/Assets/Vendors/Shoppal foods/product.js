@@ -10,7 +10,7 @@ const products = [
         shopId: "shop001",
         shopName: "Shoppal Foods",
       
-        vendorId: "Gyios8XHV6Vi0gpsr8GzRqcvUrv1"
+        vendorId: "1ZsSv7znpvWw2aRtHKmJfhU4lPD3"
     },
 
     {
@@ -24,7 +24,7 @@ const products = [
         shopId: "shop001",
         shopName: "Shoppal Foods",
       
-        vendorId: "Gyios8XHV6Vi0gpsr8GzRqcvUrv1"
+        vendorId: "1ZsSv7znpvWw2aRtHKmJfhU4lPD3"
     },
 
     {
@@ -38,7 +38,7 @@ const products = [
         shopId: "shop001",
         shopName: "Shoppal Foods",
       
-        vendorId: "Gyios8XHV6Vi0gpsr8GzRqcvUrv1"
+        vendorId: "1ZsSv7znpvWw2aRtHKmJfhU4lPD3"
     },
 
     {
@@ -52,7 +52,7 @@ const products = [
         shopId: "shop001",
         shopName: "Shoppal Foods",
       
-        vendorId: "Gyios8XHV6Vi0gpsr8GzRqcvUrv1"
+        vendorId: "1ZsSv7znpvWw2aRtHKmJfhU4lPD3"
     },
   ];
   

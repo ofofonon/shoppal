@@ -53,115 +53,53 @@ export default function Login() {
 
   const navigate = useNavigate();
 
-  useEffect(() => {
-    const unsub = onAuthStateChanged(auth, async (user) => {
   
-      if (!user) return;
-  
-      await user.reload();
-  
-      if (!user.emailVerified) {
-        await signOut(auth);
-        navigate("/verify", { replace: true });
-        return;
-      }
-  
-      navigate("/", { replace: true });
-    });
-  
-    return () => unsub();
-  }, []);
 
   const handleLogin = async () => {
     setError("");
-
+  
     if (!email || !password) {
       return setError("Fill all fields");
     }
-
+  
     setLoading(true);
-
+  
     try {
       const userCredential = await signInWithEmailAndPassword(
         auth,
         email,
         password
       );
-
-      
-      // 🔥 ALWAYS take fresh auth state
-      const user = auth.currentUser;
-      
+  
+      const user = userCredential.user;
+  
       await user.reload();
-      
-      // 🔥 NOW CHECK VERIFIED STATE PROPERLY
-      if (!auth.currentUser.emailVerified) {
+  
+      if (!user.emailVerified) {
         await signOut(auth);
         setLoading(false);
         return setError("Please verify your email before logging in.");
       }
-
-      await updateDoc(doc(db, "users", user.uid), {
-        lastLogin: new Date().toISOString(),
-      });
-
+  
       const userRef = doc(db, "users", user.uid);
       const userSnap = await getDoc(userRef);
-
-      setLoading(false);
-
+  
       if (userSnap.exists()) {
         const userData = userSnap.data();
-
+  
         if (userData.role === "admin") {
-          await updateDoc(doc(db, "users", user.uid), {
-            securityLogs: arrayUnion({
-              action: "Admin logged in",
-              createdAt: new Date().toISOString(),
-            }),
-          });
-
           navigate("/admin-profile", { replace: true });
-
         } else if (userData.role === "vendor") {
           navigate("/vendor-profile", { replace: true });
-
         } else {
           navigate("/", { replace: true });
         }
       }
-
+  
     } catch (error) {
+      setError("Login failed");
+    } finally {
       setLoading(false);
-
-      switch (error.code) {
-        case "auth/user-not-found":
-          setError("No account found");
-          break;
-
-        case "auth/wrong-password":
-          setError("Incorrect password");
-          break;
-
-        case "auth/invalid-email":
-          setError("Invalid email");
-          break;
-
-        case "auth/invalid-credential":
-          setError("Incorrect email or password");
-          break;
-
-        case "auth/too-many-requests":
-          setError("Too many attempts. Try again later");
-          break;
-
-        case "auth/network-request-failed":
-          setError("Network error");
-          break;
-
-        default:
-          setError("Login failed");
-      }
     }
   };
 

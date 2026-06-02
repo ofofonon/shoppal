@@ -246,7 +246,7 @@ const subtotal = cartItems.reduce(
       >
 
 
-      <div className="px-6 py-5 border-b border-white/5 flex items-center justify-between">
+      <div className="px-6 py-5 border-b border-white/5 flex items-center justify-between thin-scrollbar">
         <div> 
           <h2 className="text-2xl font-semibold text-white font-bric"> Cart </h2> 
           <p className="text-sm text-white/40 mt-1 font-montserrat"> {cartItems.length} item(s) </p> 
@@ -256,7 +256,7 @@ const subtotal = cartItems.reduce(
 
           </div>
         {/* CONTENT (UNCHANGED) */}
-        <div className="flex-1 overflow-y-auto px-5 py-5 space-y-4">
+        <div className="flex-1 overflow-y-auto px-5 py-5 space-y-4 thin-scrollbar">
 
   {
     cartItems.length === 0 ? (
@@ -338,7 +338,7 @@ const subtotal = cartItems.reduce(
               </div>
 
               <button
-                className="text-red-400 text-sm hover:text-red-300 transition-all mt-[-20%]"
+                className="text-red-400 text-sm hover:text-red-300 transition-all mt-[-30%]"
                 onClick={() => removeItem(item.id)}
               >
                 <i class="fa-solid fa-trash-can text-lg "></i>

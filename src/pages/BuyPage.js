@@ -39,7 +39,7 @@ const BuyPage = () => {
   const navigate = useNavigate();
   const { user } = useContext(AuthContext);
 
-  const isLoggedIn = user !== null;
+  const isLoggedIn = !!user;
 
   const reviews = [
     {
