@@ -180,7 +180,7 @@ export default function ShopShowcase() {
 
           <div
             key={shop.id}
-            className="min-w-[82%] snap-start flex-shrink-0"
+            className="w-[82%] snap-start flex-shrink-0"
           >
 
             <ShopCard shop={shop} />
