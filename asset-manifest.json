@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.ee2d6557.css",
-    "main.js": "./static/js/main.32208a08.js",
+    "main.css": "./static/css/main.b8263a37.css",
+    "main.js": "./static/js/main.7f476ec4.js",
     "static/js/453.d6e66914.chunk.js": "./static/js/453.d6e66914.chunk.js",
     "static/media/Vary_Image_-_Produce_this_image_in_the_highest_quality_possible__make_it_sharp_and_good.png": "./static/media/Vary_Image_-_Produce_this_image_in_the_highest_quality_possible__make_it_sharp_and_good.0d3604548513dc4dee57.png",
     "static/media/Ora design.PNG": "./static/media/Ora design.3a148597052c151cb661.PNG",
@@ -274,12 +274,12 @@
     "static/media/Fanta Orange 50cl PET N1,300.jpg": "./static/media/Fanta Orange 50cl PET N1,300.968d37bc0a55f91bd500.jpg",
     "static/media/logo.PNG": "./static/media/logo.dba2e0cd340249e7dd6e.PNG",
     "index.html": "./index.html",
-    "main.ee2d6557.css.map": "./static/css/main.ee2d6557.css.map",
-    "main.32208a08.js.map": "./static/js/main.32208a08.js.map",
+    "main.b8263a37.css.map": "./static/css/main.b8263a37.css.map",
+    "main.7f476ec4.js.map": "./static/js/main.7f476ec4.js.map",
     "453.d6e66914.chunk.js.map": "./static/js/453.d6e66914.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ee2d6557.css",
-    "static/js/main.32208a08.js"
+    "static/css/main.b8263a37.css",
+    "static/js/main.7f476ec4.js"
   ]
 }
