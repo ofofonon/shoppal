@@ -23,12 +23,9 @@ import coldestwaterph from "../../Assets/Vendors/The Coldest Water PH/shop"
 import coldestwateruyo from "../../Assets/Vendors/The Coldest Water Uyo/shop"
 
 export const shops = [
-  shoppalfoods,
   chickenrepublic,
   coldestwater,
-  shoppalgroceries,
   dominospizza,
-  shoppalpharmacy,
   theplace,
   burgerking,
   burgerkinglagos,
@@ -46,4 +43,6 @@ export const shops = [
   coldestwaterlagos,
   coldestwaterph,
   coldestwateruyo,
+  /*shoppalfoods,
+  shoppalgroceries,*/
 ];

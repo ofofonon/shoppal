@@ -1,5 +1,5 @@
 
-import { createContext, useEffect, useState } from "react";
+/**import { createContext, useEffect, useState } from "react";
 import { auth, db } from "../firebase";
 import { onAuthStateChanged } from "firebase/auth";
 import { doc, getDoc } from "firebase/firestore";
@@ -59,10 +59,10 @@ export const AuthProvider = ({ children }) => {
       {children}
     </AuthContext.Provider>
   );
-};
+};**/
 
 
-/**import { createContext, useEffect, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 import { auth, db } from "../firebase";
 import { onAuthStateChanged, signOut  } from "firebase/auth";
 import { doc, getDoc } from "firebase/firestore";
@@ -120,4 +120,4 @@ export const AuthProvider = ({ children }) => {
       {children}
     </AuthContext.Provider>
   );
-};**/
+};
