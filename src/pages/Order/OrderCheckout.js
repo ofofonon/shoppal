@@ -381,7 +381,7 @@ const [loadingProgress, setLoadingProgress] = useState(0);
                 </p>
 
                 <h3 className="text-lg font-semibold mt-1">
-                  ShopPal Bank
+                  Opay
                 </h3>
               </div>
 
@@ -395,12 +395,12 @@ const [loadingProgress, setLoadingProgress] = useState(0);
 
               <div>
                 <p className="text-white/40 text-xs uppercase tracking-[0.2em] mb-2">
-                  Account Number
+                Account Number
                 </p>
 
                 <div className="flex items-center justify-between bg-black/30 border border-white/5 rounded-2xl px-4 py-2">
                   <span className="text-lg tracking-[0.3em] font-semibold">
-                    1234567890
+                    8086267740
                   </span>
 
                   <button className="w-7 h-7 rounded-full bg-orange-500/20 hover:bg-orange-500 transition-all duration-300 flex items-center justify-center">
@@ -415,7 +415,7 @@ const [loadingProgress, setLoadingProgress] = useState(0);
                 </p>
 
                 <div className="bg-black/30 border border-white/5 rounded-2xl px-4 py-3 text-lg">
-                  ShopPal Technologies Ltd
+                Ukpe Victor Ukpono
                 </div>
               </div>
 

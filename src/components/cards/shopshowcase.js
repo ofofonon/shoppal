@@ -125,7 +125,7 @@ export default function ShopShowcase() {
     return enriched
       .filter(Boolean)
       .filter(
-        (shop) => shop.distance <= 200
+        (shop) => shop.distance <= 60
       );
 
   }, [vendors, userLocation]);

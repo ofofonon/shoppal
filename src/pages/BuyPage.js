@@ -263,7 +263,7 @@ const BuyPage = () => {
 
   {/* HEADING */}
 
-  <p className="relative z-10 text-white text-center font-bold text-4xl md:text-[50px] leading-none md:mt-10 mt-4">
+  <p className="relative z-10 text-white text-center font-bold text-3xl md:text-[50px] leading-none md:mt-10 mt-4">
     Select a
     <br className="block md:hidden" />
     <span className="text-orange-500"> Category</span>
