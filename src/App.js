@@ -33,6 +33,7 @@ import AboutPage from "./pages/about";
 import ContactPage from "./pages/contact";
 import FAQPage from "./pages/faq";
 import VerifyEmail from "./pages/VerifyEmail";
+import TermsAndConditions from "./pages/tnc";
 
 
 
@@ -239,6 +240,11 @@ function App() {
       <Route
         path="/verify"
         element={<VerifyEmail addToCart={addToCart}/>}
+      />
+
+      <Route
+        path="/tnc"
+        element={<TermsAndConditions addToCart={addToCart}/>}
       />
 
       <Route

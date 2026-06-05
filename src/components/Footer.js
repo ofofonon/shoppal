@@ -146,24 +146,24 @@ return (
           Legal
         </h3>
 
-        <div className="space-y-4 text-white/50 md:text-sm text-xs">
+        <div className="space-y-4 text-white/50 md:text-sm text-xs cursor-pointer">
 
           <a
-            href="/terms"
+            onClick={()=> navigate("/tnc")}
             className="block hover:text-orange-400 transition"
           >
             Terms
           </a>
 
           <a
-            href="/privacy"
+            onClick={()=> navigate("/tnc")}
             className="block hover:text-orange-400 transition"
           >
             Privacy
           </a>
 
           <a
-            href="/cookies"
+            onClick={()=> navigate("/tnc")}
             className="block hover:text-orange-400 transition"
           >
             Cookies

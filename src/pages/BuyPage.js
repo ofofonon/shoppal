@@ -28,6 +28,7 @@ import tech from "../Assets/images/Tech .webp"
 import city from "../Assets/images/indian-city-scene (1).jpg"
 import Footer from "../components/Footer";
 import TypingButton from "../components/typebut";
+import HeroVideo from "../components/hvid";
 
 
 
@@ -559,6 +560,12 @@ const BuyPage = () => {
           </AnimatePresence>
         </div>
       </div>
+
+    <div className="w-full flex justify-center items-center ">
+    <div className="md:w-[40%] w-[94%] rounded-3xl">
+    <HeroVideo />
+    </div>
+    </div>
 
     <Footer />
 
