@@ -21,8 +21,8 @@ import grocery from "../Assets/images/woman-shopping-vegetables-supermarket (1).
 import LocationModal from "../components/LocatioModal";
 import coolestad from "../Assets/images/Nano_Banana_2_-_Produce_this_image_in_the_highest_quality_possible__make_it_sharp_and_good__DO_NOT_T.jpg"
 import ora1 from "../Assets/images/Ora design 2.PNG"
-import ora2 from "../Assets/images/Ora design 3.PNG"
-import ora3 from "../Assets/images/Ora design.PNG"
+import ora2 from "../Assets/images/Ora design 3.webp"
+import ora3 from "../Assets/images/Ora design.webp"
 import pab from "../Assets/images/Pharm & beauty.webp"
 import tech from "../Assets/images/Tech .webp"
 import city from "../Assets/images/indian-city-scene (1).jpg"
