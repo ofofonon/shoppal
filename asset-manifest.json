@@ -1,10 +1,9 @@
 {
   "files": {
     "main.css": "./static/css/main.b8263a37.css",
-    "main.js": "./static/js/main.7f476ec4.js",
-    "static/js/453.d6e66914.chunk.js": "./static/js/453.d6e66914.chunk.js",
+    "main.js": "./static/js/main.dc6d2577.js",
+    "static/js/453.9bd15841.chunk.js": "./static/js/453.9bd15841.chunk.js",
     "static/media/Vary_Image_-_Produce_this_image_in_the_highest_quality_possible__make_it_sharp_and_good.png": "./static/media/Vary_Image_-_Produce_this_image_in_the_highest_quality_possible__make_it_sharp_and_good.0d3604548513dc4dee57.png",
-    "static/media/Ora design.PNG": "./static/media/Ora design.3a148597052c151cb661.PNG",
     "static/media/Shop Pal - 2.PNG": "./static/media/Shop Pal - 2.648dedf6ea952b13de68.PNG",
     "static/media/banner.jpg": "./static/media/banner.f5a05bf9335c8e36aa8c.jpg",
     "static/media/shop-banner.jpg": "./static/media/shop-banner.afbc8a034480c9513d98.jpg",
@@ -15,7 +14,6 @@
     "static/media/abtimg.jpg": "./static/media/abtimg.ef9159ece802810cb89d.jpg",
     "static/media/Ora design 2.PNG": "./static/media/Ora design 2.52f3813ed20301a2117d.PNG",
     "static/media/portrait-young-african-guy-accepts-order-by-phone-motorbike-holding-boxes-with-pizza-sit-his-bike-urban-place (2).jpg": "./static/media/portrait-young-african-guy-accepts-order-by-phone-motorbike-holding-boxes-with-pizza-sit-his-bike-urban-place (2).812d701174c30886b4b0.jpg",
-    "static/media/Ora design 3.PNG": "./static/media/Ora design 3.03e81a74b2732c447a81.PNG",
     "static/media/freepik_br_4503ced2-2ede-4941-8a6c-003101179a27.png": "./static/media/freepik_br_4503ced2-2ede-4941-8a6c-003101179a27.7c548af77d0242225575.png",
     "static/media/sustainable-products-modern-shop (1).jpg": "./static/media/sustainable-products-modern-shop (1).85bd13a8ebea2cc241ff.jpg",
     "static/media/female-shopkeeper-smiling-camera (1).jpg": "./static/media/female-shopkeeper-smiling-camera (1).6c6c0daeab8413418774.jpg",
@@ -73,6 +71,7 @@
     "static/media/White Rice with Sauce N3,100.jpg": "./static/media/White Rice with Sauce N3,100.ddc87f58dcc39cf040b3.jpg",
     "static/media/Fiesta Fried Rice N4,300.jpg": "./static/media/Fiesta Fried Rice N4,300.0f2dc0ce63f953c00fb7.jpg",
     "static/media/Prawn Rice N4,300.jpg": "./static/media/Prawn Rice N4,300.91c96abf344070e9e708.jpg",
+    "static/media/Ora design.webp": "./static/media/Ora design.98500cc3e5df5345b6a3.webp",
     "static/media/5Alive N1,500.jpg": "./static/media/5Alive N1,500.dcc29e4aa0b357543593.jpg",
     "static/media/Rich Jellof Rice N4,500.jpg": "./static/media/Rich Jellof Rice N4,500.5571152b87a5e7cd107b.jpg",
     "static/media/Tech .webp": "./static/media/Tech .1b77dc9e51f083640af4.webp",
@@ -132,6 +131,7 @@
     "static/media/The Steakhouse Meal - Large N14,750.jpg": "./static/media/The Steakhouse Meal - Large N14,750.cab1af1e53cae94ba347.jpg",
     "static/media/Citizens Meal.jpg": "./static/media/Citizens Meal.fcfb537562eced9fece9.jpg",
     "static/media/Citizens Meal N8,200.jpg": "./static/media/Citizens Meal N8,200.dbcc09da98cab47f0d66.jpg",
+    "static/media/Ora design 3.webp": "./static/media/Ora design 3.262cd7a2250fbc4186ec.webp",
     "static/media/Small Chopzz Combo N3,900.jpg": "./static/media/Small Chopzz Combo N3,900.b4e9c4e3de5a8285d8f1.jpg",
     "static/media/Double Streakhouse Meal - Medium N15,850.jpg": "./static/media/Double Streakhouse Meal - Medium N15,850.445b98f57e29b1e7ef4b.jpg",
     "static/media/Shop pal plain.webp": "./static/media/Shop pal plain.f7e2db31cdd916ed12c7.webp",
@@ -275,11 +275,11 @@
     "static/media/logo.PNG": "./static/media/logo.dba2e0cd340249e7dd6e.PNG",
     "index.html": "./index.html",
     "main.b8263a37.css.map": "./static/css/main.b8263a37.css.map",
-    "main.7f476ec4.js.map": "./static/js/main.7f476ec4.js.map",
-    "453.d6e66914.chunk.js.map": "./static/js/453.d6e66914.chunk.js.map"
+    "main.dc6d2577.js.map": "./static/js/main.dc6d2577.js.map",
+    "453.9bd15841.chunk.js.map": "./static/js/453.9bd15841.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b8263a37.css",
-    "static/js/main.7f476ec4.js"
+    "static/js/main.dc6d2577.js"
   ]
 }
